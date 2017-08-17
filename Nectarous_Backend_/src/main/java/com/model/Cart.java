@@ -45,6 +45,11 @@ public class Cart implements Serializable{
 	}
 	
 
+	public Cart() {
+		super();
+	}
+
+
 	public int getCartId() {
 		return cartId;
 	}

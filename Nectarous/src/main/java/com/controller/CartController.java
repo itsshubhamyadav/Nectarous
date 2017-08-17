@@ -26,6 +26,7 @@ import com.daoImpl.ProductDaoImpl;
 import com.daoImpl.SupplierDaoImpl;
 import com.daoImpl.UserDaoImpl;
 import com.model.Cart;
+import com.model.Orders;
 import com.model.User;
 
 @SuppressWarnings("unused")
@@ -87,10 +88,6 @@ public class CartController {
 			mv.setViewName("login");
 			return mv;
 		}
-		
-		
-		
 	}
 	
-
 }
