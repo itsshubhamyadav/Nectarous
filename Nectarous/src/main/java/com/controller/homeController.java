@@ -97,7 +97,7 @@ public class homeController {
 	
 	@RequestMapping("/signUp")
 	   public String showRegiste(){
-		   return "signUp";
+		   return "login";
 	   }
 	
 //	@RequestMapping(value="/signUp", method=RequestMethod.GET)

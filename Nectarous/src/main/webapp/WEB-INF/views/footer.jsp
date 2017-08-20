@@ -61,7 +61,7 @@
 <div class="copyright">
   <div class="container">
     <div class="col-md-6">
-      <p>© 2016 - All Rights with prabuuideveloper</p>
+      <p>© 2016 - All Rights with Shubham-developer</p>
     </div>
     <div class="col-md-6">
       <ul class="bottom_ul">

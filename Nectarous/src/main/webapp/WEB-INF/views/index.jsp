@@ -24,17 +24,17 @@
     </ol>
 
     <!-- Wrapper for slides -->
-    <div class="carousel-inner">
+    <div class="carousel-inner" style="margin-top:-100px">
       <div class="item active">
-        <img src="<c:url value="/resources/img/396549.jpg"></c:url>" alt="Los Angeles" style="width:100%;height:500px;">
+        <img src="<c:url value="/resources/img/396549.jpg"></c:url>" alt="Los Angeles" style="width:100%;height:800px;">
       </div>
 
       <div class="item">
-        <img src="<c:url value="/resources/img/550594.jpg"></c:url>" alt="Chicago" style="width:100%;height:500px;">
+        <img src="<c:url value="/resources/img/550594.jpg"></c:url>" alt="Chicago" style="width:100%;height:800px;">
       </div>
     
       <div class="item">
-        <img src="<c:url value="/resources/img/716038.jpg"></c:url>" alt="New york" style="width:100%;height:500px;">
+        <img src="<c:url value="/resources/img/716038.jpg"></c:url>" alt="New york" style="width:100%;height:800px;">
       </div>
     </div>
 

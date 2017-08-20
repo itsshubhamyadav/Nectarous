@@ -25,7 +25,6 @@
                             <li><a href="#tab3primary" data-toggle="tab">Product</a></li>
 					</ul>
 				</div>
-				<hr>
 				<div>
 					<div class="panel-body">
 						<div class="tab-content">
@@ -55,35 +54,34 @@
   					<div class="tab-pane fade" id="tab3primary">
 						<form method="post" action="<c:url value="/admin/saveProduct" />" class="form-signin" enctype="multipart/form-data">
 						<span id="reauth-email" class="reauth-email"></span>
-						<table>
 						<tr>
-						<td class="input_title">Product Name</td>
-						<td><input type="text" name="pName" required/></td>
+						<h4 class="input_title">Product Name</h4>
+						<td><input class="form-control" type="text" name="pName" required/></td>
 						</tr>
 						<tr>
-						<td class="input_title">Product Price</td>
-						<td><input type="text" name="pPrice" required/></td>
+						<h4 class="input_title">Product Price</h4>
+						<td><input class="form-control" type="text" name="pPrice" required/></td>
 						</tr>
 						<tr>
-						<td class="input_title">Product Description</td>
-						<td><input type="text" name="pDescription" required/></td>
+						<h4 class="input_title">Product Description</h4>
+						<td><input class="form-control" type="text" name="pDescription" required/></td>
 						</tr>
 						<tr>
-						<td class="input_title">Product Stock</td>
-						<td><input type="text" name="pStock" required/></td>
+						<h4 class="input_title">Product Stock</h4>
+						<td><input class="form-control" type="text" name="pStock" required/></td>
 						</tr>
 						
 						<div class="form-group">
-						<td>Select Category</td>
+						<h4>Select Category</h4>
 						<td><select class="form-control" name="pCategory" reqiured/>
 						<option value="">----Category----</option>
 						<c:forEach items="${catList}" var="cate">
 						<option value="${cate.cid }">${cate.name }</option></c:forEach>
 						</select></td>
 						</div>
-						
+						<tr>
 						<div class="form-group">
-						<td>Select Supplier</td>
+						<h4>Select Supplier</h4>
 						<td><select class="form-control" name="pSupplier" reqiured/>
 						<option value="">----Supplier----</option>
 						<c:forEach items="${satList}" var="sate">
@@ -92,10 +90,10 @@
 						</div>
 						
 						<tr>
-						<td class="input_title">image</td>
-						<td><input type="file" name="file" required/></td>
+						<h4 class="input_title">Image</h4>
+						<td><input class="form-control" type="file" name="file" required/></td>
 						</tr>
-						</table>
+						<br>
 						<button type="submit" class="btn btn-lg btn-info">Save</button>
 						<button type="reset" class="btn btn-lg btn-info">Cancel</button>
 						</form>
