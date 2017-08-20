@@ -130,7 +130,7 @@ public class homeController {
 	{
 		System.out.println(cid);
 		ModelAndView mav=new ModelAndView();
-		mav.addObject("productList",productDaoImpl.getProdById(cid));
+		mav.addObject("prodList",productDaoImpl.getProdById(cid));
 		mav.setViewName("productCustList");
 		return mav;
 	}
@@ -140,6 +140,13 @@ public class homeController {
 		   return "prodDetail";
 	   }
 	
+	@RequestMapping("/prodDetail/{id}")
+	public String details(@PathVariable("id") int id) {
+		System.out.println("Product details");
+		productDaoImpl.getProdById(id);
+		return "prodDetail";
+	}
+
 	
 	@ModelAttribute
 	public void addAttributes(Model m)

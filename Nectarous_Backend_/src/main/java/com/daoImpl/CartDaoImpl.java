@@ -40,7 +40,7 @@ public class CartDaoImpl {
 		List<Cart> cr=null;
 		try {
 			session.beginTransaction();
-			cr=(List<Cart>)session.createQuery("from Cart where userMailId=: email").setString("email",userId).list();
+			cr=(List<Cart>)session.createQuery("from Cart where userMailId=:email").setString("email",userId).list();
 			session.getTransaction().commit();
 		}
 		catch(HibernateException ex){

@@ -15,7 +15,7 @@
 <body>
 <jsp:include page="/WEB-INF/views/header.jsp"></jsp:include>
 <div class="container">
-	<div class="row">
+	<div class="row"><br><br>
 		<div class="col-am-1 col-md-7 col-md-offset-3">
 			<div class="panel with-nav-tabs panel-primary">
 				<div class="panel-heading">
@@ -25,6 +25,7 @@
                             <li><a href="#tab3primary" data-toggle="tab">Product</a></li>
 					</ul>
 				</div>
+				<hr>
 				<div>
 					<div class="panel-body">
 						<div class="tab-content">
@@ -34,6 +35,7 @@
 						<td><input class="form-control" type="number" name="cid" required/></td>
 						<h4 class="input_title">Category Name</h4>
 						<td><input class="form-control" type="text" name="name" required/></td>
+						<br>
 						<button type="submit" class="btn btn-lg btn-info">Save</button>
 						<button type="reset" class="btn btn-lg btn-info">Cancel</button>
 						</form>
@@ -44,6 +46,7 @@
 						<td><input class="form-control" type="number" name="sid" required/ ></td>
 						<h4 class="input_title">Supplier Name</h4>
 						<td><input class="form-control" type="text" name="supplierName" required/></td>
+						<br>
 						<button type="submit" class="btn btn-lg btn-info">Save</button>
 						<button type="reset" class="btn btn-lg btn-info">Cancel</button>
 						</form>
@@ -52,6 +55,7 @@
   					<div class="tab-pane fade" id="tab3primary">
 						<form method="post" action="<c:url value="/admin/saveProduct" />" class="form-signin" enctype="multipart/form-data">
 						<span id="reauth-email" class="reauth-email"></span>
+						<table>
 						<tr>
 						<td class="input_title">Product Name</td>
 						<td><input type="text" name="pName" required/></td>
@@ -91,7 +95,7 @@
 						<td class="input_title">image</td>
 						<td><input type="file" name="file" required/></td>
 						</tr>
-						
+						</table>
 						<button type="submit" class="btn btn-lg btn-info">Save</button>
 						<button type="reset" class="btn btn-lg btn-info">Cancel</button>
 						</form>

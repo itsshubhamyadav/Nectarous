@@ -13,6 +13,7 @@ import com.model.Cart;
 import com.model.Category;
 import com.model.Orders;
 import com.model.Product;
+import com.model.User;
 
 @SuppressWarnings("deprecation")
 @Repository("ordersDao")
@@ -33,6 +34,6 @@ public class OrdersDaoImpl {
 		session.persist(orders);
 		session.getTransaction().commit();
 	}
-	
+
 	
 }

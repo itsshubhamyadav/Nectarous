@@ -17,7 +17,7 @@ import javax.validation.constraints.Size;
 public class Orders {
 	@Id
 	@GeneratedValue
-	private int orederId;
+	private int orderId;
 	@ManyToOne
 	@JoinColumn(name="email")
 	private User user;
@@ -25,11 +25,11 @@ public class Orders {
 	private String payment;
 	private Double total;
 	
-	public int getOrederId() {
-		return orederId;
+	public int getOrderId() {
+		return orderId;
 	}
 	public void setOrederId(int orederId) {
-		this.orederId = orederId;
+		this.orderId = orederId;
 	}
 	public User getUser() {
 		return user;

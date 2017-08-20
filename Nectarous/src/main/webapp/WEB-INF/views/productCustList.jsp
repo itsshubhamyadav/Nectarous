@@ -10,7 +10,7 @@
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<title>Insert title here</title>
+<title>Product Customer List</title>
 </head>
 <body>
 	<div class="container">
@@ -32,7 +32,7 @@
 	<td><img src="${pageContext.request.contextPath}/resources/${c.imgname} " width="50px" height="50px"></td>
 	<td class="span4">
     <c:set var="contextRoot" value="${pageContext.request.contextPath}"/>
-    <a class="btn btn-info" role="button" href="<c:url value="/prodDetails/${c.id}"/>">Details</a>
+    <a class="btn btn-info" role="button" href="<c:url value="/prodDetail/${c.id}"/>">Details</a>
 	</td>
 	</tr>
 	</c:forEach>
