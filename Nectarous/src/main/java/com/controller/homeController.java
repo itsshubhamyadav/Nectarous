@@ -115,7 +115,7 @@ public class homeController {
 		ModelAndView mav=new ModelAndView();
 		if(result.hasErrors())
 		{
-			mav.setViewName("signUp");
+			mav.setViewName("login");
 			return mav;
 		}
 		else {

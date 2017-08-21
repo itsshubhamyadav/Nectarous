@@ -13,6 +13,8 @@
 <title>Product Customer List</title>
 </head>
 <body>
+
+
 	<div class="container">
 	<h2>Product List</h2>
 	<table class="table table-hover" id="category" class="display" border="1" width="80" align="center">

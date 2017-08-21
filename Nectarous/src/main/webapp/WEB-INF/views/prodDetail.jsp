@@ -18,21 +18,25 @@
 			<div class="col-md-6 item-photo">
 				<img
 					src="${pageContext.request.contextPath}/resources/${product.imgname}"
-					style="margin-top: 50px;" />
+					style="max-width:100%; margin-top: 50px;" />
 			</div>
 			<div class="col-md-7">
+			<label> Name</label>
 				<h2>${product.name}</h2>
+				<label>Description</label>
 				<h4>${product.description}</h4>
+				<label>Price</label>
 				<h5>${product.Price}</h5>
+				<label>Vendor</label>
 				<h5>${product.supplier.supplierName}</h5>
 			</div>
 			<div class="section">
 				<form action="${pageContext.request.contextPath}/addToCart"
 					method="post">
-					<input type="hidden" value="${product.id}" name="pid" /><br> <input
-						type="hidden" value="${product.price}" name="price" /><br> <input
-						type="hidden" value="${product.name}" name="name" /><br> <input
-						type="hidden" value="${product.imgname}" name="imgname" /><br>
+					<input type="hidden" value="${product.id}" name="pid" /><br>
+					 <input type="hidden" value="${product.price}" name="price" /><br> 
+					 <input	type="hidden" value="${product.name}" name="name" /><br>
+					  <input type="hidden" value="${product.imgname}" name="imgname" /><br>
 						
 					<label>Mention quantity of product for purchase:</label><br>
 					<input type="number" class="form-control" name="qty" required /><br>

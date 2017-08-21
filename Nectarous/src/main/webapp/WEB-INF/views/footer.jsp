@@ -16,15 +16,17 @@
 <footer>
   <div class="container">
     <div class="row">
-      <div class="col-md-3 col-sm-6 footer-col">
-        <div class="logofooter"> Logo</div>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
-        <p><i class="fa fa-map-pin"></i> #228, Tiruvannamalai, Tamilnadu, India</p>
-        <p><i class="fa fa-phone"></i> Phone (India) : +91 9999 999 999</p>
-        <p><i class="fa fa-envelope"></i> E-mail : info@prabuuideveloper.com</p>
+      <div class="col-md-4 col-sm-8 footer-col">
+        <div class="logofooter"> <img
+						src="${pageContext.request.contextPath}/resources/img/small-4654-5992e8352dc71.png"></div>
+        <br>
+        <p >This is a site where you would get an exciting flavours of Sweets.<br>Hope you would all neccessary products
+        </p>
+        
+        
         
       </div>
-      <div class="col-md-3 col-sm-6 footer-col">
+      <div class="col-md-4 col-sm-8 footer-col">
         <h6 class="heading7">GENERAL LINKS</h6>
         <ul class="footer-ul">
           <li><a href="#"> Career</a></li>
@@ -36,15 +38,8 @@
           <li><a href="#"> Frequently Ask Questions</a></li>
         </ul>
       </div>
-      <div class="col-md-3 col-sm-6 footer-col">
-        <h6 class="heading7">LATEST POST</h6>
-        <div class="post">
-          <p>facebook crack the movie advertisment code:what it means for you <span>August 3,2015</span></p>
-          <p>facebook crack the movie advertisment code:what it means for you <span>August 3,2015</span></p>
-          <p>facebook crack the movie advertisment code:what it means for you <span>August 3,2015</span></p>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 footer-col">
+      
+      <div class="col-md-4 col-sm-8 footer-col">
         <h6 class="heading7">Social Media</h6>
         <ul class="footer-social">
           <li><i class="fa fa-linkedin social-icon linked-in" aria-hidden="true"></i></li>
@@ -52,6 +47,10 @@
           <li><i class="fa fa-twitter social-icon twitter" aria-hidden="true"></i></li>
           <li><i class="fa fa-google-plus social-icon google" aria-hidden="true"></i></li>
         </ul>
+        <br><br><br><br>
+        <p><i class="fa fa-map-pin"></i> JSS Acedemy of Technical Education, Sector-62, Noida, India</p>
+        <p><i class="fa fa-phone"></i> Phone (India) : +91 8960-462-045</p>
+        <p><i class="fa fa-envelope"></i> E-mail : shubham@gmail.com</p>
       </div>
     </div>
   </div>
@@ -69,7 +68,7 @@
         <li><a href="#">About us</a></li>
         <li><a href="#">Blog</a></li>
         <li><a href="#">Faq's</a></li>
-        <li><a href="#">Contact us</a></li>
+        <li><a href="contactUs">Contact us</a></li>
         <li><a href="#">Site Map</a></li>
       </ul>
     </div>

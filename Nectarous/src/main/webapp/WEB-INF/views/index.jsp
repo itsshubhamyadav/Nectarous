@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>home</title>
+  <title>Home</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -48,6 +48,13 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
+</div>
+
+<br>
+<div>
+<div>A</div>
+<div>B</div>
+<div>C</div>
 </div>
 <jsp:include page="/WEB-INF/views/footer.jsp"></jsp:include>
 </body>

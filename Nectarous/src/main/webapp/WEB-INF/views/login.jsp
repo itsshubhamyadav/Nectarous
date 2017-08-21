@@ -16,11 +16,11 @@
 <link rel="stylesheet"
 	href="<c:url value="/resources/css/login.css"></c:url>">
 <img alt=""
-	src="${pageContext.request.contextPath}/resources/img/Candy-HD-Picture.jpg " style="margin-top: -100px;">
+	src="${pageContext.request.contextPath}/resources/img/Candy-HD-Picture.jpg " style="margin-top: -100px; height:auto; width:auto;">
 
 </head>
 <body>
-	<jsp:include page="/WEB-INF/views/header.jsp"></jsp:include>
+
 	<div id="fullscreen_bg" class="fullscreen_bg" />
 	<div id="regContainer" class="container">
 		<div class="row">
@@ -32,7 +32,7 @@
 								<a href="login" class="active" id="login-form-link">Login</a>
 							</div>
 							<div class="col-xs-6">
-								<a href="signUp" id="register-form-link">Register</a>
+								<a href="login" id="register-form-link">Register</a>
 							</div>
 						</div>
 						<hr>
@@ -69,24 +69,28 @@
 										</div>
 									</div>
 								</form>
-								<form id="register-form" action="saveregister" method="post"
+								<form id="register-form" action="${pageContext.request.contextPath}/saveregister" method="post"
 									role="form" style="display: none;">
 									<div class="form-group">
-										<label for="name">Username</label> <input type="text"
-											name="username" id="username" tabindex="1"
+									<form:errors path="username" cssClass="err" />
+										<label for="username">Username</label> <input type="text"
+											name="name" id="username" tabindex="1"
 											class="form-control" placeholder="Username" value="">
 									</div>
 									<div class="form-group">
+									<form:errors path="email" cssClass="err" />
 										<label for="email">E-mail</label> <input type="email"
 											name="email" id="email" tabindex="1" class="form-control"
 											placeholder="xyz@domain.com" value="">
 									</div>
 									<div class="form-group">
+									<form:errors path="address" cssClass="err" />
 										<label for="address">Address</label> <input type="text"
 											name="address" id="address" tabindex="1" class="form-control"
 											placeholder="Address" value="">
 									</div>
 									<div class="form-group">
+									<form:errors path="password" cssClass="err" />
 										<label for="password">Password</label> <input type="password"
 											name="password" id="password" tabindex="2"
 											class="form-control" placeholder="Password">
@@ -102,6 +106,7 @@
 										</select>
 									</div>
 									<div class="form-group">
+									<form:errors path="phone" cssClass="err" />
 										<label for="phone">Phone</label> <input type="text"
 											name="phone" id="phone" tabindex="2" class="form-control"
 											placeholder="Phone Number">

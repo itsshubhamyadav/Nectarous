@@ -13,7 +13,7 @@
 </head>
 <body>
 <jsp:include page="/WEB-INF/views/header.jsp"></jsp:include>
-<div class-"container">
+<div class="container">
 <h4><img alt="" src="${pageContext.request.contextPath}/resources/img/cart.png" style="width: 200px; height: 200px;">&nbsp; Your Cart</h4>
 <table id="cart" class="table table-hover table-condensed">
 <thead>

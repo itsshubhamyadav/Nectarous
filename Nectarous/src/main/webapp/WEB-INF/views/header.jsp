@@ -44,7 +44,7 @@
 							<ul class="dropdown-menu">
 								<li><a
 									href="${pageContext.request.contextPath }/admin/adding">Admin
-										Login</a></li>
+										</a></li>
 								<li><a
 									href="${pageContext.request.contextPath }/admin/productList">Admin
 										List</a></li>

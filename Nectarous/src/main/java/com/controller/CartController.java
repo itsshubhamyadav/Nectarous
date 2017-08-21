@@ -54,7 +54,6 @@ public class CartController {
 			Principal principal=req.getUserPrincipal();
 			String userEmail=principal.getName();
 			int pid=Integer.parseInt(req.getParameter("pid"));
-			int x = pid;
 			Double price=Double.parseDouble(req.getParameter("pPrice"));
 			int quantity=Integer.parseInt(req.getParameter("quant"));
 			String productName=req.getParameter("name");
@@ -88,7 +87,7 @@ public class CartController {
 			return mv;
 		}	
 		catch(Exception e)
-		{
+		{   e.printStackTrace();
 			mv.setViewName("login");
 			return mv;
 		}
