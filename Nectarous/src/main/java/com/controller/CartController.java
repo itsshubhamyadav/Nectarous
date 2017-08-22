@@ -32,6 +32,7 @@ import com.model.Product;
 import com.model.User;
 
 @SuppressWarnings("unused")
+@RequestMapping("/cart")
 @Controller
 public class CartController {
 	@Autowired
@@ -50,9 +51,9 @@ public class CartController {
 	@RequestMapping(value="/addToCart", method= RequestMethod.POST)
 	public ModelAndView addToCart(HttpServletRequest req) {
 		ModelAndView mv=new ModelAndView();
+		Principal principal=req.getUserPrincipal();
+		String userEmail=principal.getName();
 		try {
-			Principal principal=req.getUserPrincipal();
-			String userEmail=principal.getName();
 			int pid=Integer.parseInt(req.getParameter("pid"));
 			Double price=Double.parseDouble(req.getParameter("pPrice"));
 			int quantity=Integer.parseInt(req.getParameter("quant"));
@@ -66,6 +67,7 @@ public class CartController {
 				cm.setCartProductId(pid);
 				cm.setCartProductName(productName);
 				cm.setCartImage(imgname);
+				cm.setCartQuantity(quantity);
 				User u=userDaoImpl.findById(userEmail);
 				cm.setCartUserDetails(u);
 				cartDaoImpl.insert(cm);

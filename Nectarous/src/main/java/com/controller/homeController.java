@@ -96,8 +96,11 @@ public class homeController {
 //	}
 	
 	@RequestMapping("/signUp")
-	   public String showRegiste(){
-		   return "login";
+	   public ModelAndView showRegiste(){
+			ModelAndView mv=new ModelAndView();
+			mv.addObject("user",new User());
+			mv.setViewName("login");
+		   return mv;
 	   }
 	
 //	@RequestMapping(value="/signUp", method=RequestMethod.GET)
@@ -110,7 +113,7 @@ public class homeController {
 //	}
 	
 	@RequestMapping(value="/saveregister", method=RequestMethod.POST)
-	public ModelAndView saveRegister(@Valid @ModelAttribute("user") User user, BindingResult result)
+	public ModelAndView saveRegister( @ModelAttribute("user") User user, BindingResult result)
 	{
 		ModelAndView mav=new ModelAndView();
 		if(result.hasErrors())

@@ -22,22 +22,17 @@ public class User implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
 	
-	@NotNull
-	@Column(name="name")
+
 	private String name;
 	
 	private String address;
 	
 	@Id
-	
 	private String email;
 	
-	@Pattern(regexp="[\\d] {10}",message="Please enter Digits")
-	@NotNull
-	@Size(min=0, max=10,message="Enter correct phone number")
+	
 	private String phone;
 	
-	@NotNull(message="Password is null")
 	private String password;
 	private String gender;
 	private String role;

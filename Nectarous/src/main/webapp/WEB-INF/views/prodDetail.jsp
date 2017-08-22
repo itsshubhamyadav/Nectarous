@@ -21,7 +21,8 @@
 					style="max-width:100%; margin-top: 50px;" />
 			</div>
 			<div class="col-md-7">
-			<label> Name</label>
+			<label>
+			Name</label>
 				<h2>${product.name}</h2>
 				<label>Description</label>
 				<h4>${product.description}</h4>
@@ -31,15 +32,15 @@
 				<h5>${product.supplier.supplierName}</h5>
 			</div>
 			<div class="section">
-				<form action="${pageContext.request.contextPath}/addToCart"
+				<form action="${pageContext.request.contextPath}/cart/addToCart"
 					method="post">
 					<input type="hidden" value="${product.id}" name="pid" /><br>
-					 <input type="hidden" value="${product.price}" name="price" /><br> 
+					 <input type="hidden" value="${product.price}" name="pPrice" /><br> 
 					 <input	type="hidden" value="${product.name}" name="name" /><br>
 					  <input type="hidden" value="${product.imgname}" name="imgname" /><br>
 						
 					<label>Mention quantity of product for purchase:</label><br>
-					<input type="number" class="form-control" name="qty" required /><br>
+					<input type="text" class="form-control" name="quant" required /><br>
 					<input class="btn btn-primary btn-lg" type="submit" value="Add To Cart"/>
 				</form>
 			</div>

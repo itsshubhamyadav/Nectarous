@@ -72,9 +72,9 @@
 								<form id="register-form" action="${pageContext.request.contextPath}/saveregister" method="post"
 									role="form" style="display: none;">
 									<div class="form-group">
-									<form:errors path="username" cssClass="err" />
+									<form:errors path="name" cssClass="err" />
 										<label for="username">Username</label> <input type="text"
-											name="name" id="username" tabindex="1"
+											name="name" id="name" tabindex="1"
 											class="form-control" placeholder="Username" value="">
 									</div>
 									<div class="form-group">
