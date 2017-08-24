@@ -15,7 +15,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 @SuppressWarnings("deprecation")
-@Repository("cartDao")
+@Repository("cartDaoImpl")
 public class CartDaoImpl {
 	@Autowired
 	SessionFactory sessionFactory;
@@ -26,14 +26,14 @@ public class CartDaoImpl {
 		this.sessionFactory=sessionFactory;	
 	}
 	
-	public void insertCategory(Cart cart)
+	public void insert(Cart cart)
 	{
 		Session session= sessionFactory.openSession();
 		session.beginTransaction();
 		session.persist(cart);
 		session.getTransaction().commit();
 	}
-	
+	@SuppressWarnings("unchecked")
 	public List<Cart> findCartById(String userId)
 	{
 		Session session=sessionFactory.openSession();
@@ -70,14 +70,7 @@ public class CartDaoImpl {
 		session.getTransaction().commit();
 		
 	}
-	
-	public void insert(Cart cr) {
-		Session session=sessionFactory.openSession();
-		session.beginTransaction();
-		session.saveOrUpdate(cr);
-		session.getTransaction().commit();
-		
-	}
+
 
 	
 	public void update(Cart cr) {

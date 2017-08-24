@@ -36,7 +36,7 @@ public class UserDaoImpl implements UserDao {
 		User p=null;
 		try {
 			session.beginTransaction();
-			p=session.get(User.class,p);
+			p=session.get(User.class,email);
 			session.getTransaction().commit();
 		}
 		catch(HibernateException ex){

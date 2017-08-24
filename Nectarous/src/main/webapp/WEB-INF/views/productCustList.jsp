@@ -22,10 +22,10 @@
 	<th>Sr. No.</th><th>PID</th><th>Name</th><th>Supplier</th><th>Category</th>
 	<th>Price</th><th style="width:15">Description</th><th>Image</th><th>View Details</th>
 	<c:if test="${empty prodList}"><tr><td colspan="9" align="center">No record exists</td></tr></c:if>
-	<c:forEach var="c" varStatus="st" items="${prodList}">
+	<c:forEach var="c" varStatus="st" items="${ prodList}">
 	<tr>
 	<td><c:out value="${st.count}"></c:out></td>
-	<td><c:out value="${c.id}"></c:out></td>
+	<td><c:out value="${c.pid}"></c:out></td>
 	<td><c:out value="${c.name}"></c:out></td>
 	<td><c:out value="${c.supplier.supplierName}"></c:out></td>
 	<td><c:out value="${c.category.name}"></c:out></td>
@@ -34,7 +34,7 @@
 	<td><img src="${pageContext.request.contextPath}/resources/${c.imgname} " width="50px" height="50px"></td>
 	<td class="span4">
     <c:set var="contextRoot" value="${pageContext.request.contextPath}"/>
-    <a class="btn btn-info" role="button" href="<c:url value="/prodDetail/${c.id}"/>">Details</a>
+    <a class="btn btn-info" role="button" href="<c:url value="/prodDetail/${c.pid}"/>">Details</a>
 	</td>
 	</tr>
 	</c:forEach>

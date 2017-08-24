@@ -14,7 +14,9 @@
     <link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/home.css"></c:url>">
 </head>
 <body>
+<header>
     <jsp:include page="/WEB-INF/views/header.jsp"></jsp:include>
+  </header>
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">

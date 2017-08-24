@@ -1,28 +1,71 @@
-/* CSS used here will be applied after bootstrap.css */
-html,body {
-	height:100%;
-    padding-top:70px;
+section
+{
+  background:yellow;
+}
+.banner
+{
+  background:red;
+  min-height:200px;
+}
+.banner .row
+{
+  text-align:center;
+  margin-top:50px;
+}
+.banner h1
+{
+  color:white;
+}
+li{
+	 font-family: "Times New Roman", Times, serif;
 }
 
 
-section {
-  height:calc(90% - 50px);
+/***********************************************************************
+*  OPAQUE NAVBAR SECTION
+***********************************************************************/
+.opaque-navbar {
+    background-color: rgba(0,0,0,0.5);
+  /* Transparent = rgba(0,0,0,0) / Translucent = (0,0,0,0.5)  */
+    
+    border-bottom: 0px;
+    transition: background-color .5s ease 0s;
+    padding-top:20px;
+  padding-bottom:20px;
+  -webkit-transition:padding 0.5 linear;
+  -moz-transition:padding 0.5s linear;  
+  -o-transition:padding 0.5s linear;         
+  transition:padding 0.5s linear; 
 }
 
-.affix {
-  padding:0px;
+.opaque-navbar.opaque {
+    background-color: black;
+    
+    transition: background-color .5s ease 0s;
+    padding:0px;
   -webkit-transition:padding 0.2s linear;
   -moz-transition:padding 0.2s linear;  
   -o-transition:padding 0.2s linear;         
   transition:padding 0.2s linear;  
-
 }
 
-.affix-top {
-  padding-top:15px;
-  padding-bottom:15px;
-  -webkit-transition:padding 0.5s linear;
-  -moz-transition:padding 0.5s linear;  
-  -o-transition:padding 0.5s linear;         
-  transition:padding 0.5s linear;  
+ul.dropdown-menu {
+    background-color: black;
 }
+
+
+@media (max-width: 992px) {
+  body
+  {
+    background: chocolate;
+  }
+  .opaque-navbar {
+    background-color: black;
+    height: 60px;
+    transition: background-color .5s ease 0s;
+}
+ 
+}
+
+
+

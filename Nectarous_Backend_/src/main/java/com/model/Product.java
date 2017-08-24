@@ -26,6 +26,7 @@ public class Product implements Serializable {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private int pid;
 	
+	
 	private String name;
 	private String description;
 	private Float price;
@@ -44,13 +45,13 @@ public class Product implements Serializable {
 	@Transient
 	MultipartFile pimage;
 	
-	
-	public int getId() {
+	public int getPid() {
 		return pid;
 	}
-	public void setId(int pid) {
+	public void setPid(int pid) {
 		this.pid = pid;
 	}
+	
 	public String getName() {
 		return name;
 	}

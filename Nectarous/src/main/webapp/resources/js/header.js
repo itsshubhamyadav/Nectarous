@@ -1,9 +1,19 @@
-$(function(){
-    $(window).scroll(function(){
-        if($(document).scrollTop() > 5){
-            $('#navbar').addClass('sticky');
-        } else {
-            $('#navbar').removeClass('sticky');
-        }
-    })
+ /*
+  **********************************************************
+  * OPAQUE NAVBAR SCRIPT
+  **********************************************************
+  */
+
+  // Toggle tranparent navbar when the user scrolls the page
+
+  $(window).scroll(function() {
+    if($(this).scrollTop() > 40)  /*height in pixels when the navbar becomes non opaque*/ 
+    {
+        $('.opaque-navbar').addClass('opaque');
+    } else {
+        $('.opaque-navbar').removeClass('opaque');
+      
+    }
 });
+  
+  

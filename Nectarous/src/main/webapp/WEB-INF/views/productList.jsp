@@ -13,8 +13,10 @@
 
 </head>
 <body>
-<jsp:include page="/WEB-INF/views/header.jsp"></jsp:include>
-<br>
+<br><br><br><br><br>
+<header>
+    <jsp:include page="/WEB-INF/views/header.jsp"></jsp:include>
+  </header><br><br><br><br>
 <h2>Product List</h2>
 <div>
 	<table class="table table-hover" id="category" class="display" border="1" width="80" align="center">
@@ -27,7 +29,7 @@
 	<c:forEach var="c" varStatus="st" items="${prodList}">
 	<tr>
 	<td><c:out value="${st.count}"></c:out></td>
-	<td><c:out value="${c.id}"></c:out></td>
+	<td><c:out value="${c.pid}"></c:out></td>
 	<td><c:out value="${c.name}"></c:out></td>
 	<td><c:out value="${c.supplier.supplierName}"></c:out></td>
 	<td><c:out value="${c.category.name}"></c:out></td>
@@ -36,8 +38,8 @@
 	<td><img src="${pageContext.request.contextPath}/resources/${c.imgname} " width="50px" height="50px"></td>
 	<td class="span4">
     <c:set var="contextRoot" value="${pageContext.request.contextPath}"/>
-    <a class="btn btn-info" role="button" href="<c:url value="/admin/deleteProduct/${c.id}"/>">Delete</a>
-    <a class="btn btn-info" role="button" href="${contextRoot}/admin/updateProduct?id=<c:out value="${c.id}"></c:out>">Update</a>
+    <a class="btn btn-info" role="button" href="<c:url value="/admin/deleteProduct/${c.pid}"/>">Delete</a>
+    <a class="btn btn-info" role="button" href="${contextRoot}/admin/updateProduct?id=<c:out value="${c.pid}"></c:out>">Update</a>
            </td>
 	</tr>
 	</c:forEach>

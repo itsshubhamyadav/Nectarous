@@ -21,27 +21,26 @@
 					style="max-width:100%; margin-top: 50px;" />
 			</div>
 			<div class="col-md-7">
-			<label>
-			Name</label>
+			
+			    <label>Name</label>
 				<h2>${product.name}</h2>
 				<label>Description</label>
 				<h4>${product.description}</h4>
 				<label>Price</label>
-				<h5>${product.Price}</h5>
+				<h5>${product.price}</h5>
 				<label>Vendor</label>
 				<h5>${product.supplier.supplierName}</h5>
 			</div>
 			<div class="section">
-				<form action="${pageContext.request.contextPath}/cart/addToCart"
-					method="post">
-					<input type="hidden" value="${product.id}" name="pid" /><br>
-					 <input type="hidden" value="${product.price}" name="pPrice" /><br> 
-					 <input	type="hidden" value="${product.name}" name="name" /><br>
-					  <input type="hidden" value="${product.imgname}" name="imgname" /><br>
-						
-					<label>Mention quantity of product for purchase:</label><br>
+				<form action="${pageContext.request.contextPath}/addToCart" method="post">
+					<input type="hidden" value="${product.pid}" name="pid" />
+					 <input type="hidden" value="${product.price}" name="pPrice" /> 
+					 <input	type="hidden" value="${product.name}" name="name" />
+					  <input type="hidden" value="${product.imgname}" name="imgname" />
+						<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+					<label>Mention quantity of product for purchase:</label>
 					<input type="text" class="form-control" name="quant" required /><br>
-					<input class="btn btn-primary btn-lg" type="submit" value="Add To Cart"/>
+					<button class="btn btn-primary btn-lg" type="submit" >Add To Cart</button>
 				</form>
 			</div>
 			<div class="col-sm-9">

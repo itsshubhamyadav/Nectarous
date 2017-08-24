@@ -26,6 +26,7 @@
 <th>Action</th>
 </tr>
 </thead>
+<tbody>
 <c:if test="${empty cartInfo}">
 <tr>
 <td colspan="9" align="center" >No Record Exist</td>
@@ -35,16 +36,24 @@
 <c:forEach var="c" varStatus="st" items="${cartInfo}">
 <tr>
 <td><c:out value="${c.cartProductName}"></c:out></td>
+<td><c:out value="${c.cartQuantity}"></c:out></td>
 <td><c:out value="${c.cartPrice}"></c:out></td>
-<td><img src="${pageContext.request.contextPath}/resources/${c.cartName} " width="50px" height="50px"></td>
+<td><img src="${pageContext.request.contextPath}/resources/${c.cartImage} " width="50px" height="50px"></td>
 <td><c:out value="${c.cartQuantity*c.cartPrice}"></c:out></td>
-<td><a href="${pageContext.request.contextPath}/deletePCart/${c.cartId}"></a></td>
+<td><a class="btn btn-info" role="button" href="${pageContext.request.contextPath}/deletePCart/${c.cartId}">Delete</a></td>
 <td><c:set var="gtot" value="${gtot + c.cartPrice * c.cartQuantity }"></c:set></td>
-<td><span class="col-lg-9" align="right"><label>Grand Total</label><c:out value="${gtot}"></c:out></td>
 </tr>
-
 </c:forEach>
+<tr>
+   <td><span class="col-lg-9" allign="right"><strong>Grand Total</strong><c:out value="${gtot}"></c:out></span></td>
+    </tr>
 </table>
+<tfoot>
+    <form  action="${pageContext.request.contextPath}/checkout" method="post">
+     <td><a href="${pageContext.request.contextPath}/index" class="btn btn-warning"><i class="fa fa-angle-left"></i>Continue Shopping</a></td>
+     <td><button type="submit" class="btn btn-lg btn-primary btn-block">Checkout<i class="fa fa-angle-right"></i></button></td>  
+    </form>
+  </tfoot>
 </div>
 </body>
 </html>

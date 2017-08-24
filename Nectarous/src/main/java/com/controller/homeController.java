@@ -123,6 +123,7 @@ public class homeController {
 		}
 		else {
 			user.setRole("ROLE_USER");
+			user.setEnabled(true);
 			userDaoImpl.insertUser(user);
 			mav.setViewName("redirect:/goTologin");
 			return mav;
@@ -138,16 +139,20 @@ public class homeController {
 		return mav;
 	}
 	
-	@RequestMapping("/addToCart")
-	   public String addToCart(){
-		   return "prodDetail";
-	   }
-	
-	@RequestMapping("/prodDetail/{id}")
-	public String details(@PathVariable("id") int id) {
+//	@RequestMapping("/addToCart")
+//	   public String addToCart(){
+//		   return "prodDetail";
+//	   }
+//	
+	@RequestMapping("/prodDetail/{pid}")
+	public ModelAndView details(@PathVariable("pid") int pid) {
+		ModelAndView mav=new ModelAndView("prodDetail");
 		System.out.println("Product details");
-		productDaoImpl.getProdById(id);
-		return "prodDetail";
+		System.out.println("*********");
+		 System.out.println(pid);
+		 System.out.println("*********");
+		mav.addObject("product",productDaoImpl.findById(pid));
+		return mav;
 	}
 
 	

@@ -32,7 +32,6 @@ import com.model.Product;
 import com.model.User;
 
 @SuppressWarnings("unused")
-@RequestMapping("/cart")
 @Controller
 public class CartController {
 	@Autowired
@@ -48,52 +47,55 @@ public class CartController {
 	@Autowired
 	OrdersDaoImpl ordersDaoImpl;
 	
-	@RequestMapping(value="/addToCart", method= RequestMethod.POST)
-	public ModelAndView addToCart(HttpServletRequest req) {
-		ModelAndView mv=new ModelAndView();
-		Principal principal=req.getUserPrincipal();
-		String userEmail=principal.getName();
-		try {
-			int pid=Integer.parseInt(req.getParameter("pid"));
-			Double price=Double.parseDouble(req.getParameter("pPrice"));
-			int quantity=Integer.parseInt(req.getParameter("quant"));
-			String productName=req.getParameter("name");
-			String imgname=req.getParameter("imgname");
-			Cart exists= cartDaoImpl.getCartById(pid, userEmail);
-			if(exists==null)
-			{
-				Cart cm=new Cart();
-				cm.setCartPrice(price);
-				cm.setCartProductId(pid);
-				cm.setCartProductName(productName);
-				cm.setCartImage(imgname);
-				cm.setCartQuantity(quantity);
-				User u=userDaoImpl.findById(userEmail);
-				cm.setCartUserDetails(u);
-				cartDaoImpl.insert(cm);
-			}
-			else if(exists!=null){
-				Cart cm=new Cart();
-				cm.setCartPrice(price);
-				cm.setCartProductId(pid);
-				cm.setCartProductName(productName);
-				cm.setCartImage(imgname);
-				User u=userDaoImpl.findById(userEmail);
-				cm.setCartUserDetails(u);
-				cartDaoImpl.update(cm);
-			}
-			
-			mv.addObject("cartInfo",cartDaoImpl.findCartById(userEmail));
-			mv.setViewName("cart");
-			
-			return mv;
-		}	
-		catch(Exception e)
-		{   e.printStackTrace();
-			mv.setViewName("login");
-			return mv;
-		}
-	}
+	
+	
+	@RequestMapping(value="/addToCart", method=RequestMethod.POST)
+    public ModelAndView addToCart(HttpServletRequest req){
+		 ModelAndView mav=new ModelAndView();
+		 Principal principal =req.getUserPrincipal();
+		 
+		 try{
+			 String userEmail=principal.getName();
+			 int pid=Integer.parseInt(req.getParameter("pid"));
+			 Double cartPrice=Double.parseDouble(req.getParameter("pPrice"));
+			 int cartQuantity=Integer.parseInt(req.getParameter("quant"));
+		     String servicename=req.getParameter("name");
+		     String imgname=req.getParameter("imgname");
+		     Cart cartExists=cartDaoImpl.getCartById(pid, userEmail);
+		     if(cartExists==null){
+		    	 Cart cr=new Cart();
+		    	 cr.setCartPrice(cartPrice);
+		    	 cr.setCartProductId(pid);
+		    	 cr.setCartProductName(servicename);
+		    	 cr.setCartImage(imgname);
+		    	 cr.setCartQuantity(cartQuantity);
+		    	 User u=userDaoImpl.findById(userEmail);
+		    	 cr.setCartUserDetails(u);
+		    	 cartDaoImpl.insert(cr);
+		     }
+		     else{
+		    	 Cart cr=new Cart();
+		    	 cr.setCartId(cartExists.getCartId());
+		    	 cr.setCartPrice(cartPrice);
+		    	 cr.setCartProductId(pid);
+		    	 cr.setCartProductName(servicename);
+		    	 cr.setCartImage(imgname);
+		    	 cr.setCartQuantity(cartQuantity);
+		    	 User u=userDaoImpl.findById(userEmail);
+		    	 cr.setCartUserDetails(u);
+		    	 cartDaoImpl.update(cr);
+		     }
+		    mav.addObject("cartInfo",cartDaoImpl.findCartById(userEmail));
+		    mav.setViewName("cart");
+		    return mav;
+		    
+		 }catch(Exception e){
+			 e.printStackTrace();
+			 mav.setViewName("login");
+			 return mav;			 
+		 }
+	 }
+  
 	
 	@RequestMapping(value="/prodDetails/{cid}", method=RequestMethod.GET)
 	public ModelAndView prodDetail(@PathVariable("cid") int cid,HttpServletRequest req)
@@ -134,12 +136,11 @@ public class CartController {
 		String userEmail=principal.getName();
 		mv.addObject("cartInfo",cartDaoImpl.findCartById(userEmail));	
 		mv.setViewName("cart");
-		return mv;
-		
+		return mv;	
 	}
 	
 
-	@RequestMapping(value="/checkout", method=RequestMethod.GET)
+	@RequestMapping(value="/checkout", method=RequestMethod.POST)
 	public ModelAndView checkOut(HttpServletRequest req)
 	{
 		ModelAndView mv=new ModelAndView("checkout");
