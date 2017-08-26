@@ -13,10 +13,10 @@
 <title>Product Customer List</title>
 </head>
 <body>
+<jsp:include page="/WEB-INF/views/header.jsp"></jsp:include>
 
-
-	<div class="container">
-	<h2>Product List</h2>
+	<div class="container" style="margin-top:120px; margin-bottom:120px;">
+	<cEnter><h2>Product List</h2></cEnter><hr><hr>
 	<table class="table table-hover" id="category" class="display" border="1" width="80" align="center">
 	<tr>
 	<th>Sr. No.</th><th>PID</th><th>Name</th><th>Supplier</th><th>Category</th>
@@ -40,5 +40,6 @@
 	</c:forEach>
 	</table>
 	</div>
+	<jsp:include page="/WEB-INF/views/footer.jsp"></jsp:include>
 </body>
 </html>

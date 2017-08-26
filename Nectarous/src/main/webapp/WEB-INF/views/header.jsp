@@ -21,11 +21,12 @@
   <span class="glyphicon glyphicon-chevron-right" style="color:white;"></span>
     
   </button>
-      <a class="navbar-brand" href="#">Your Company</a>
+      <a class="navbar-brand" href="#"><img
+						src="${pageContext.request.contextPath}/resources/img/1.png" style="margin-top:-15px; width:150px; height:50px"></a>
     </div>
     <div class="collapse navbar-collapse" id="navMain">
       <ul class="nav navbar-nav ">
-        <li><a href="${pageContext.request.contextPath }/index">Home</a></li>
+        <li><a href="${pageContext.request.contextPath }/index"><p style="">Home</p></a></li>
         <li><a href="${pageContext.request.contextPath }/aboutUs">About Us</a></li>
         <li><a href="#" data-toggle="dropdown"
 							class="dropdown-toggle">Admin<b class="caret"></b></a>
@@ -58,7 +59,7 @@
 							<li><a>Welcome:
 									${pageContext.request.userPrincipal.name}</a></li>
 							<li><a href="<c:url value="/logout" />">Logout</a></li>
-							<li><i class="fa fa-shopping-cart" aria-hidden="true"></i></li>
+							<li><span class="glyphicon glyphicon-shopping-cart" style="margin-top:16px;"></span></li>
 							<li><a href="${pageContext.request.contextPath }/goToCart">My
 									Cart</a></li>
 						</c:if>

@@ -16,15 +16,18 @@
 <br><br><br><br><br>
 <header>
     <jsp:include page="/WEB-INF/views/header.jsp"></jsp:include>
-  </header><br><br><br><br>
-<h2>Product List</h2>
+  </header><br><br>
+<center><h2>Product List</h2></center><hr><hr>
 <div>
-	<table class="table table-hover" id="category" class="display" border="1" width="80" align="center">
+	<table class="table" id="category" class="display" border="1" width="80" align="center" style="margin-bottom:80px;">
+	<thead class="thead thead-inverse">
 	<tr>
 	<th>Sr. No.</th><th>PID</th><th>Name</th><th>Supplier</th><th>Category</th>
 	<th>Price</th><th style="width:15">Description</th><th>Image</th>
 	<th class="span2">Action</th>
 	</tr>
+	</thead>
+	
 	<c:if test="${empty prodList}"><tr><td colspan="9" align="center">No record exists</td></tr></c:if>
 	<c:forEach var="c" varStatus="st" items="${prodList}">
 	<tr>
@@ -45,5 +48,6 @@
 	</c:forEach>
 	</table>
 </div>
+<jsp:include page="/WEB-INF/views/footer.jsp"></jsp:include>
 </body>
 </html>

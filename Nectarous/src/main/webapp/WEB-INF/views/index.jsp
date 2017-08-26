@@ -23,22 +23,30 @@
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
     </ol>
 
     <!-- Wrapper for slides -->
-    <div class="carousel-inner" style="margin-top:-100px">
+    <div class="carousel-inner" style="margin-top:0px">
       <div class="item active">
-        <img src="<c:url value="/resources/img/396549.jpg"></c:url>" alt="Los Angeles" style="width:100%;height:800px;">
+        <img src="<c:url value="/resources/img/397301.jpg"></c:url>" alt="Los Angeles" style="width:100%;height:800px;">
       </div>
 
       <div class="item">
-        <img src="<c:url value="/resources/img/550594.jpg"></c:url>" alt="Chicago" style="width:100%;height:800px;">
+        <img src="<c:url value="/resources/img/407589.jpg"></c:url>" alt="Chicago" style="width:100%;height:800px;">
       </div>
     
       <div class="item">
-        <img src="<c:url value="/resources/img/716038.jpg"></c:url>" alt="New york" style="width:100%;height:800px;">
+        <img src="<c:url value="/resources/img/123456.jpg"></c:url>" alt="New york" style="width:100%;height:800px;">
+      </div>
+      
+      <div class="item">
+        <img src="<c:url value="/resources/img/654123.jpg"></c:url>" alt="New york" style="width:100%;height:800px;">
       </div>
     </div>
+    
+    </div>
+    
 
     <!-- Left and right controls -->
     <a class="left carousel-control" href="#myCarousel" data-slide="prev">

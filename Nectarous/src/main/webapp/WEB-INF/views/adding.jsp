@@ -14,7 +14,7 @@
 </head>
 <body>
 <jsp:include page="/WEB-INF/views/header.jsp"></jsp:include>
-<div class="container">
+<div class="container" style="margin-top:100px; margin-bottom:100px;">
 	<div class="row"><br><br>
 		<div class="col-am-1 col-md-7 col-md-offset-3">
 			<div class="panel with-nav-tabs panel-primary">
@@ -105,5 +105,6 @@
 		</div>
 	</div>
 </div>
+<jsp:include page="/WEB-INF/views/footer.jsp"></jsp:include>
 </body>
 </html>

@@ -18,7 +18,7 @@
     <div class="row">
       <div class="col-md-4 col-sm-8 footer-col">
         <div class="logofooter"> <img
-						src="${pageContext.request.contextPath}/resources/img/small-4654-5992e8352dc71.png"></div>
+						src="${pageContext.request.contextPath}/resources/img/1.png"></div>
         <br>
         <p >This is a site where you would get an exciting flavours of Sweets.<br>Hope you would all neccessary products
         </p>

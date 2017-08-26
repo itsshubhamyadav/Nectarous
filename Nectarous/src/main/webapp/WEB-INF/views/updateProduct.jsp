@@ -9,46 +9,79 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<title>Insert title here</title>
+<title>Update List</title>
 </head>
 <body>
 <jsp:include page="/WEB-INF/views/header.jsp"></jsp:include><br>
-<div class="container">
+<div class="container" style="margin-top:120px; margin-bottom:100px;">
 <c:url value="/productUpdate" var="pru"></c:url>
-<form action="productUpdate" method="post" enctype="multipart/form-data">
-<input type="hidden" name="pid" value="${prod.id}">
-<label>Product Name</label>
-<input type="text" name="pName" value="${prod.name }" required/>
-<label>Product Price</label>
-<input type="text" name="pPrice" value="${prod.price }" required/>
-<label>Product Stock</label>
-<input type="text" name="pStock" value="${prod.stock }" required/>
-<label>Product Description</label>
-<input type="text" name="pDesc" value="${prod.description }" required/>
-<label>Product Category</label>
-<select name="pCategory">
+<form class="form-horizontal" action="productUpdate" method="post" enctype="multipart/form-data">
+<input type="hidden" name="pid" value="${prod.pid}">
+
+<div class="form-group">
+<label  class="control-label col-xs-2">Product Name</label>
+<div class="col-xs-10">
+<input type="text" class="form-control" name="pName" value="${prod.name }" required/>
+</div>
+</div>
+
+<div class="form-group">
+<label class="control-label col-xs-2">Product Price</label>
+<div class="col-xs-10">
+<input type="text" class="form-control" name="pPrice" value="${prod.price }" required/>
+</div>
+</div>
+
+<div class="form-group">
+<label class="control-label col-xs-2">Product Stock</label>
+<div class="col-xs-10">
+<input type="text" class="form-control" name="pStock" value="${prod.stock }" required/>
+</div>
+</div>
+
+<div class="form-group">
+<label class="control-label col-xs-2">Product Description</label>
+<div class="col-xs-10">
+<input type="text" class="form-control" name="pDesc" value="${prod.description }" required/>
+</div></div>
+
+<div class="form-group">
+<label class="control-label col-xs-2">Product Category</label>
+<div class="col-xs-10">
+<select class="form-control" name="pCategory">
 <option value="0">----Select Category----</option>
 <c:forEach items="${catList }" var="cate">
 <option value="${cate.cid }">${cate.name}
 </option>
 </c:forEach>
 </select>
-<select name="pSupplier">
+</div></div>
+
+<div class="form-group">
+<label class="control-label col-xs-2">Product Supplier</label>
+<div class="col-xs-10">
+<select class="form-control" name="pSupplier">
 <option value="0">----Product Supplier----</option>
 <c:forEach items="${satList }" var="sate">
 <option value="${sate.sid }">${sate.supplierName}
 </option>
 </c:forEach>
 </select>
+</div></div>
+
 <div class="fileinput fileinput-new" dataprovides="fileInput">
-<tr>
-<td>Image</td>
-<td><input class="form-control" type="file" name="file" accept="images/*"></td>
-</tr>
-</div>
+<div class="form-group">
+<Label class="control-label col-xs-2">Image</Label>
+<div class="col-xs-10">
+<input class="form-control" type="file" name="file" accept="images/*">
+</div></div></div>
+<hr>
+<center>
 <button class="btn btn-lg btn-primary" type="submit" >Update</button>
 <button class="btn btn-lg btn-primary" type="reset" >Cancel</button>
+</center>
 </form>
 </div>
+<jsp:include page="/WEB-INF/views/footer.jsp"></jsp:include>
 </body>
 </html>
