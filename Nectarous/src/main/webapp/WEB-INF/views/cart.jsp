@@ -16,6 +16,8 @@
 
 
  <div class="container" style="margin-top:120px; margin-bottom:100px;">
+ <img src="<c:url value="/resources/img/small-cart-hi.png"></c:url>" alt="none" style="height:200px;width:200px;margin-left:100px"/>
+ <center><h1 style="color: ;margin-top:-50px;"><b>My Cart</b></h1></center><hr>
     <div class="row">
         <div class="col-sm-12 col-md-10 col-md-offset-1">
             <table class="table table-hover">
@@ -41,7 +43,7 @@
                             <a class="thumbnail pull-left" href="#"> <img class="media-object" src="${pageContext.request.contextPath}/resources/${c.cartImage}" style="width: 72px; height: 72px;"> </a>
                             <div class="media-body">
                                 <h4 class="media-heading"><a href="#"><c:out value="${c.cartProductName}"></c:out></a></h4>
-                                <h5 class="media-heading"> by <a href="#">Brand name</a></h5>
+                                <h5 class="media-heading"> by <a href="#">Shubham Sweets</a></h5>
                                 <span>Status: </span><span class="text-success"><strong>In Stock</strong></span>
                             </div>
                         </div></td>

@@ -33,7 +33,7 @@
       </div>
 
       <div class="item">
-        <img src="<c:url value="/resources/img/407589.jpg"></c:url>" alt="Chicago" style="width:100%;height:800px;">
+        <img src="<c:url value="/resources/img/210989.jpg"></c:url>" alt="Chicago" style="width:100%;height:800px;">
       </div>
     
       <div class="item">
@@ -61,14 +61,18 @@
 </div>
 
 <br>
+
+<center><h1 style="color:#59b300;background-color:#ff9966;">Our Most Sold Product</h1></center>
+
 <div class="Row">
             <div class="Column">
+            
     <div class="container" style="height: 500px;width: 400px;">
 	<form class="form" action="https://www.google.co.in/">
 	<center><p style="margin-top:-15px; background-color:#F3AB25;"><b>Gulab Jamun</b></p></center>
 	    <div class="header">
 	        <img src="<c:url value="/resources/img/images1.jpeg"></c:url>" alt="none" height="200px" width="200px"/>
-	        <p style="background-color:#F3AB25; margin-top:5px;"><b>10% Discount</b></p>
+	        <p style="background-color:#F3AB25; margin-top:5px;"><b>Get 10% Discount</b></p>
         </div>
 	    <a class="btn btn-primary btn-lg btn-block" role="button" href="<c:url value="/prodDetail/260"/>">Add to cart</a>
 	</form>
@@ -81,7 +85,7 @@
 	<center><p style="margin-top:-15px; background-color:#F3AB25;"><b>Orange Burfee</b></p></center>
 	    <div class="header">
 	        <img src="<c:url value="/resources/img/sweea697_2.jpg"></c:url>" alt="none" height="200px" width="200px"/>
-	        <p style="background-color:#F3AB25; margin-top:5px;"><b>25% Discount</b></p>
+	        <p style="background-color:#F3AB25; margin-top:5px;"><b>Get 25% Discount</b></p>
         </div>
 	    <a class="btn btn-primary btn-lg btn-block" role="button" href="<c:url value="/prodDetail/258"/>">Add to cart</a>
 	</form>
@@ -93,7 +97,7 @@
 	<center><p style="margin-top:-15px; background-color:#F3AB25;"><b>Kaaju Katri</b></p></center>
 	    <div class="header">
 	        <img src="<c:url value="/resources/img/oetqpEfeehfag_bigger.jpg"></c:url>" alt="none" height="200px" width="200px"/>
-	        <p style="background-color:#F3AB25; margin-top:5px;"><b>35% Discount</b></p>
+	        <p style="background-color:#F3AB25; margin-top:5px;"><b>Get 35% Discount</b></p>
         </div>
         <a class="btn btn-primary btn-lg btn-block" role="button" href="<c:url value="/prodDetail/129"/>">Add to cart</a>
 	</form>
@@ -101,14 +105,19 @@
             </div>
         </div>
         
-        <div class="Row1">
+        <div class="Row1">        
             <div class="Column1">
+            <center><h3 style="color:#59b300;">Arrange sweets for Your Birthday</h3></center>
+            <center><marquee bgcolor=#ffb3b3 width=60% height=50px><h2 style="margin-top:8px;"> Avail Sweets at 18% discount.<b style="color: #ff0000;"> HURRY UP !!! </b></h2></marquee></center>
+            <center><h3><span class="blink_text">*** Offer Limited ***</span></h3></center>
     <div class="container" style="height: 500px;width: 100%;">
-	<form class="form" action="https://www.google.co.in/">
+	<form class="form1 action="https://www.google.co.in/">
+	<center><p style="margin-top:-15px; background-color:#59b300;"><b> Sweets for Your Birthday</b></p></center>
 	    <div class="header">
-	        <img src="397301.jpg" alt="none" height="200px" width="200px"/>
+	        <img src="<c:url value="/resources/img/birthday.jpg"></c:url>" 
+	        alt="none" height="200px" width="800px">
         </div>
-        <a class="btn btn-primary btn-lg btn-block" role="button" href="<c:url value="/prodDetail/129"/>">Add to cart</a>
+        <a class="btn btn-primary btn-lg btn-block" role="button" href="<c:url value="/birthday"/>">Click to get Arranged</a>
 
 	</form>
 </div>

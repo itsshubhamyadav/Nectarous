@@ -33,6 +33,13 @@ public class homeController {
 	SupplierDaoImpl supplierDaoImpl;	
 	
 	
+	@RequestMapping("/birthday")
+	   public String birthday(){
+			System.out.println("Executing  the method Birthday Page");
+		   return "birthday";
+	   }
+	
+	
 	@RequestMapping("/login")
 	   public String loginPage(){
 			System.out.println("Executing  the method Login Page");

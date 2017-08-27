@@ -21,7 +21,7 @@
   <span class="glyphicon glyphicon-chevron-right" style="color:white;"></span>
     
   </button>
-      <a class="navbar-brand" href="#"><img
+      <a class="navbar-brand" href="${pageContext.request.contextPath }/index"><img
 						src="${pageContext.request.contextPath}/resources/img/1.png" style="margin-top:-15px; width:150px; height:50px"></a>
     </div>
     <div class="collapse navbar-collapse" id="navMain">

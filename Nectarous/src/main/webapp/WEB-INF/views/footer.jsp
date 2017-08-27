@@ -20,7 +20,7 @@
         <div class="logofooter"> <img
 						src="${pageContext.request.contextPath}/resources/img/1.png"></div>
         <br>
-        <p >This is a site where you would get an exciting flavours of Sweets.<br>Hope you would all neccessary products
+        <p >This is a site where you would get an exciting flavours of Sweets.<br>Hope you would get all neccessary products.
         </p>
         
         
@@ -42,15 +42,15 @@
       <div class="col-md-4 col-sm-8 footer-col">
         <h6 class="heading7">Social Media</h6>
         <ul class="footer-social">
-          <li><i class="fa fa-linkedin social-icon linked-in" aria-hidden="true"></i></li>
-          <li><i class="fa fa-facebook social-icon facebook" aria-hidden="true"></i></li>
-          <li><i class="fa fa-twitter social-icon twitter" aria-hidden="true"></i></li>
-          <li><i class="fa fa-google-plus social-icon google" aria-hidden="true"></i></li>
+          <li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin social-icon linked-in" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.facebook.com/"><i class="fa fa-facebook social-icon facebook" aria-hidden="true"></i></a></li>
+          <li><a href="https://twitter.com/"><i class="fa fa-twitter social-icon twitter" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.google.co.in/"><i class="fa fa-google-plus social-icon google" aria-hidden="true"></i></a></li>
         </ul>
         <br><br><br><br>
         <p><i class="fa fa-map-pin"></i> JSS Acedemy of Technical Education, Sector-62, Noida, India</p>
         <p><i class="fa fa-phone"></i> Phone (India) : +91 8960-462-045</p>
-        <p><i class="fa fa-envelope"></i> E-mail : shubham@gmail.com</p>
+        <p><i class="fa fa-envelope"></i> E-mail : shubhamyadav03.2011@gmail.com</p>
       </div>
     </div>
   </div>

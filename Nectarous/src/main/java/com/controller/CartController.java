@@ -109,9 +109,11 @@ public class CartController {
 	}
 	
 	
+	
 	@RequestMapping(value="/invoiceProcess", method=RequestMethod.POST)
 	public ModelAndView orderSave(HttpServletRequest req)
 	{
+		System.out.println("shubhum");
 		ModelAndView mv=new ModelAndView("invoice");
 		Orders ord=new Orders();
 		Principal principal=req.getUserPrincipal();
@@ -127,6 +129,8 @@ public class CartController {
 		return mv;
 		
 	}
+	
+	
 	
 	@RequestMapping(value="/goToCart", method=RequestMethod.GET)
 	public ModelAndView goToCart(HttpServletRequest req)

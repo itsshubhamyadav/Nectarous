@@ -171,6 +171,7 @@
                                         <span class='payment-errors'></span>
                                         <fieldset>
                                         
+                                        <form action="/index" method="post">
                                           &nbsp&nbsp&nbsp&nbsp<input type="radio" class="active" name="payment" value="DebitCard">
                                           <label> <h4> &nbsp&nbsp&nbspDebit Card</h4></label>  
                                             <div class="form-group">
@@ -261,8 +262,7 @@
                                           <label> <h4> &nbsp&nbsp&nbspCash on Delivery</h4></label><br>    
                                         </fieldset>
                                         <input type="hidden" value="${gtot+50}" name="total" />
-                                        <form action="${pageContext.request.contextPath}/invoiceProcess" method="post">
-                                        <button type="submit" class="btn btn-success btn-lg" style="width:100%;" action="${pageContext.request.contextPath}/invoiceProcess" method="post">Pay
+                                        <button type="submit" class="btn btn-success btn-lg" style="width:100%;">Pay
                                             Now
                                         </button>
                                         </form>

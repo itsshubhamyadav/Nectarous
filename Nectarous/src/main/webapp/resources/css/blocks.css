@@ -33,7 +33,22 @@
 {
     display: table-cell;
     height: 500px;
-    width: 450px;/*Optional*/
+    width: 100%;/*Optional*/
+}
+
+.form1 {
+    margin:auto;
+    margin-top:80px;
+    max-width:80%;
+    padding:40px;
+    background:#eee;
+    
+
+    border-radius: 25px;
+    border: 2px solid #993300;
+    width: 100%;
+    height:350px;    
+    
 }
 
 .Row1
@@ -43,12 +58,39 @@
     width: 100%; /*Optional*/
     table-layout: fixed; /*Optional*/
     border-spacing: 10px; /*Optional*/
+    margin-bottom:15px;
 }
 .Column1
 {
     display: table-cell;
     height: 500px;
     width: 100%;
-    background-color: antiquewhite;
     /*Optional*/
 }
+
+.blink_text {
+
+    animation:1s blinker linear infinite;
+    -webkit-animation:2s blinker linear infinite;
+    -moz-animation:2s blinker linear infinite;
+
+     color:  #cc0099;
+    }
+
+    @-moz-keyframes blinker {  
+     0% { opacity: 1.0; }
+     50% { opacity: 0.0; }
+     100% { opacity: 1.0; }
+     }
+
+    @-webkit-keyframes blinker {  
+     0% { opacity: 1.0; }
+     50% { opacity: 0.0; }
+     100% { opacity: 1.0; }
+     }
+
+    @keyframes blinker {  
+     0% { opacity: 1.0; }
+     50% { opacity: 0.0; }
+     100% { opacity: 1.0; }
+     }

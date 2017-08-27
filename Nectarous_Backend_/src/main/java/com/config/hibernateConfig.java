@@ -112,7 +112,7 @@ return new ProductDaoImpl(sessionFactory);
 @Bean(name="ordersDaoImpl")
 public OrdersDaoImpl getOrdersDAO(SessionFactory sessionFactory)
 {
-	System.out.println("SupplierDaoImpl");
+	System.out.println("OrdersDaoImpl");
 return new OrdersDaoImpl(sessionFactory);
 }
 
@@ -120,7 +120,7 @@ return new OrdersDaoImpl(sessionFactory);
 @Bean(name="cartDaoImpl")
 public CartDaoImpl getCartDAO(SessionFactory sessionFactory)
 {
-	System.out.println("SupplierDaoImpl");
+	System.out.println("CartDaoImpl");
 return new CartDaoImpl(sessionFactory);
 }
 
