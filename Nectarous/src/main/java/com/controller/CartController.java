@@ -109,7 +109,7 @@ public class CartController {
 	}
 	
 	
-	@RequestMapping(value="/invoiceprocess", method=RequestMethod.POST)
+	@RequestMapping(value="/invoiceProcess", method=RequestMethod.POST)
 	public ModelAndView orderSave(HttpServletRequest req)
 	{
 		ModelAndView mv=new ModelAndView("invoice");

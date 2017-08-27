@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/home.css"></c:url>">
+    <link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/blocks.css"></c:url>">
 </head>
 <body>
 <header>
@@ -61,11 +61,62 @@
 </div>
 
 <br>
-<div>
-<div>A</div>
-<div>B</div>
-<div>C</div>
+<div class="Row">
+            <div class="Column">
+    <div class="container" style="height: 500px;width: 400px;">
+	<form class="form" action="https://www.google.co.in/">
+	<center><p style="margin-top:-15px; background-color:#F3AB25;"><b>Gulab Jamun</b></p></center>
+	    <div class="header">
+	        <img src="<c:url value="/resources/img/images1.jpeg"></c:url>" alt="none" height="200px" width="200px"/>
+	        <p style="background-color:#F3AB25; margin-top:5px;"><b>10% Discount</b></p>
+        </div>
+	    <a class="btn btn-primary btn-lg btn-block" role="button" href="<c:url value="/prodDetail/260"/>">Add to cart</a>
+	</form>
 </div>
+            </div>
+            
+            <div class="Column">
+        <div class="container" style="height: 500px;width: 400px;">
+	<form class="form" action="https://www.google.co.in/">
+	<center><p style="margin-top:-15px; background-color:#F3AB25;"><b>Orange Burfee</b></p></center>
+	    <div class="header">
+	        <img src="<c:url value="/resources/img/sweea697_2.jpg"></c:url>" alt="none" height="200px" width="200px"/>
+	        <p style="background-color:#F3AB25; margin-top:5px;"><b>25% Discount</b></p>
+        </div>
+	    <a class="btn btn-primary btn-lg btn-block" role="button" href="<c:url value="/prodDetail/258"/>">Add to cart</a>
+	</form>
+</div>
+            </div>
+            <div class="Column">
+        <div class="container" style="height: 500px;width: 400px;">
+	<form class="form" action="https://www.google.co.in/">
+	<center><p style="margin-top:-15px; background-color:#F3AB25;"><b>Kaaju Katri</b></p></center>
+	    <div class="header">
+	        <img src="<c:url value="/resources/img/oetqpEfeehfag_bigger.jpg"></c:url>" alt="none" height="200px" width="200px"/>
+	        <p style="background-color:#F3AB25; margin-top:5px;"><b>35% Discount</b></p>
+        </div>
+        <a class="btn btn-primary btn-lg btn-block" role="button" href="<c:url value="/prodDetail/129"/>">Add to cart</a>
+	</form>
+</div>
+            </div>
+        </div>
+        
+        <div class="Row1">
+            <div class="Column1">
+    <div class="container" style="height: 500px;width: 100%;">
+	<form class="form" action="https://www.google.co.in/">
+	    <div class="header">
+	        <img src="397301.jpg" alt="none" height="200px" width="200px"/>
+        </div>
+        <a class="btn btn-primary btn-lg btn-block" role="button" href="<c:url value="/prodDetail/129"/>">Add to cart</a>
+
+	</form>
+</div>
+            </div>
+            
+            
+            </div>
+
 <jsp:include page="/WEB-INF/views/footer.jsp"></jsp:include>
 </body>
 </html>

@@ -1,0 +1,54 @@
+.form {
+    margin:auto;
+    margin-top:80px;
+    max-width:300px;
+    padding:40px;
+    background:#eee;
+    
+
+    border-radius: 25px;
+    border: 2px solid #993300;
+    width: 300px;
+    height:370px;    
+    
+}
+.header {
+    text-align:center;
+    margin-bottom:20px;
+}
+.lock{
+    background-color: blue;
+    font-size:100px;
+}
+.Row
+{
+    background-color: bisque;
+    display: table;
+    width: 100%; /*Optional*/
+    table-layout: fixed; /*Optional*/
+    border-spacing: 10px; /*Optional*/
+    margin-bottom:15px;
+}
+.Column
+{
+    display: table-cell;
+    height: 500px;
+    width: 450px;/*Optional*/
+}
+
+.Row1
+{
+    background-color: bisque;
+    display: table;
+    width: 100%; /*Optional*/
+    table-layout: fixed; /*Optional*/
+    border-spacing: 10px; /*Optional*/
+}
+.Column1
+{
+    display: table-cell;
+    height: 500px;
+    width: 100%;
+    background-color: antiquewhite;
+    /*Optional*/
+}
