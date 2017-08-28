@@ -7,6 +7,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>footer</title>
+<link rel="shortcut icon" href="<c:url value="/resources/img/1.png"></c:url>" />
 <link rel="stylesheet" type="text/css"
 	href="<c:url value="/resources/css/footer.css"></c:url>">
 </head>

@@ -5,6 +5,7 @@
 <html>
 <head>
 <title>Login or Register</title>
+<link rel="shortcut icon" href="<c:url value="/resources/img/1.png"></c:url>" />
 <link rel="stylesheet" type="text/css"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script
@@ -45,7 +46,7 @@
 									role="form" style="display: block;">
 									<div class="form-group">
 										<form:errors path="username" cssClass="err" />
-										<label for="username">Username</label> <input type="text"
+										<label for="username">User ID</label> <input type="text"
 											name="username" id="username" tabindex="1"
 											class="form-control" placeholder="Username" value="">
 									</div>

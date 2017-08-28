@@ -113,7 +113,7 @@ public class CartController {
 	@RequestMapping(value="/invoiceProcess", method=RequestMethod.POST)
 	public ModelAndView orderSave(HttpServletRequest req)
 	{
-		System.out.println("shubhum");
+		System.out.println("Invoice Process");
 		ModelAndView mv=new ModelAndView("invoice");
 		Orders ord=new Orders();
 		Principal principal=req.getUserPrincipal();
@@ -125,7 +125,8 @@ public class CartController {
 		ord.setTotal(total);
 		ord.setPayment(payment);
 		ordersDaoImpl.insertOrders(ord);
-		mv.addObject("orderDetails",user);	
+		mv.addObject("user",user);
+		mv.addObject("cart",cartDaoImpl.findCartById(userEmail));
 		return mv;
 		
 	}

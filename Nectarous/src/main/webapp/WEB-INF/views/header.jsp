@@ -4,6 +4,7 @@
  <%@ taglib uri="http://www.springframework.org/tags" prefix="spring" %> 
 <html>
     <head>
+    <link rel="shortcut icon" href="<c:url value="/resources/img/1.png"></c:url>" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
@@ -26,7 +27,7 @@
     </div>
     <div class="collapse navbar-collapse" id="navMain">
       <ul class="nav navbar-nav ">
-        <li><a href="${pageContext.request.contextPath }/index"><p style="">Home</p></a></li>
+        <li><a href="${pageContext.request.contextPath }/index"><p >Home</p></a></li>
         <li><a href="${pageContext.request.contextPath }/aboutUs">About Us</a></li>
         <li><a href="#" data-toggle="dropdown"
 							class="dropdown-toggle">Admin<b class="caret"></b></a>
