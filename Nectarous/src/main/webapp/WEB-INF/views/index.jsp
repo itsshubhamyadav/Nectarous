@@ -75,7 +75,7 @@
 	        <img src="<c:url value="/resources/img/images1.jpeg"></c:url>" alt="none" height="200px" width="200px"/>
 	        <p style="background-color:#F3AB25; margin-top:5px;"><b>Get 10% Discount</b></p>
         </div>
-	    <a class="btn btn-primary btn-lg btn-block" role="button" href="<c:url value="/prodDetail/260"/>">Add to cart</a>
+	    <a class="btn btn-primary btn-lg btn-block" role="button" href="<c:url value="/prodDetail/261"/>">Add to cart</a>
 	</form>
 </div>
             </div>

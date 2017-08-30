@@ -51,7 +51,7 @@
 
   
   
-    <div class="col-sm-3 col-md-6 col-md-offset-3" style="align:center;">
+    <div class="col-sm-3 col-md-6 col-md-offset-3" >
     <div class="thumbnail">
       <img src="<c:url value="/resources/img/back.jpg"></c:url>" alt="about us page design using bootstrap" style="height:235px;width:600px;">
         <img class="team-pic" src="<c:url value="/resources/img/shubham.jpg"></c:url>">

@@ -12,6 +12,13 @@
 		src="${pageContext.request.contextPath}/resources/js/header.js"></script>
 	<link rel="stylesheet" type="text/css"
 		href="<c:url value="/resources/css/head.css"></c:url>">
+		<script src="content/js/jquery.min.js"></script>
+<script src="content/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.dropdown-toggle').dropdown();
+    });
+</script>
 
     </head>
     <body>
@@ -32,7 +39,7 @@
         <li><a href="#" data-toggle="dropdown"
 							class="dropdown-toggle">Admin<b class="caret"></b></a>
 							<ul class="dropdown-menu">
-								<li><a
+								<li class="inli"><a
 									href="${pageContext.request.contextPath }/admin/adding">Admin
 										</a></li>
 								<li><a

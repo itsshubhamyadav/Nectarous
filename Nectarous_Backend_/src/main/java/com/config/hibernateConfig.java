@@ -107,7 +107,13 @@ public ProductDaoImpl getProductDAO(SessionFactory sessionFactory)
 	System.out.println("ProductDaoImpl");
 return new ProductDaoImpl(sessionFactory);
 }
-
+@Autowired
+@Bean(name="cartDaoImpl")
+public CartDaoImpl getCartDAO(SessionFactory sessionFactory)
+{
+	System.out.println("CartDaoImpl");
+return new CartDaoImpl(sessionFactory);
+}
 @Autowired
 @Bean(name="ordersDaoImpl")
 public OrdersDaoImpl getOrdersDAO(SessionFactory sessionFactory)
@@ -116,13 +122,7 @@ public OrdersDaoImpl getOrdersDAO(SessionFactory sessionFactory)
 return new OrdersDaoImpl(sessionFactory);
 }
 
-@Autowired
-@Bean(name="cartDaoImpl")
-public CartDaoImpl getCartDAO(SessionFactory sessionFactory)
-{
-	System.out.println("CartDaoImpl");
-return new CartDaoImpl(sessionFactory);
-}
+
 
 @Autowired
 @Bean(name = "transactionManager")

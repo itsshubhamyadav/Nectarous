@@ -18,11 +18,11 @@
 <body>
 <jsp:include page="/WEB-INF/views/header.jsp"></jsp:include>
 
-<div class="container">
+<div class="container" style="margin-top: 120px; margin-bottom: 100px;">
     <div class="row">
         <div class="col-md-8">
             <div class="well well-sm">
-                <form>
+                <form action="mailto:shubhamyadav03.2011@gmail.com" method="post" enctype="text/plain">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
@@ -72,18 +72,17 @@
                 <strong>Twitter, Inc.</strong><br>
                 C 20/1 , JSS Acedemy Of Technical Education,<br>
                 Sector 62, Noida, India <br>
-                <abbr title="Phone">
-                    P:</abbr>
+                <abbr title="Phone">Phone : </abbr>
                 +91 8960-462-045
             </address>
             <address>
                 <strong>Full Name</strong><br>
-                <a href="mailto:">shubhamyadav03.2011@gmail.com</a>
+                <a href="mailto:shubhamyadav03.2011@gmail.com">Shubham Yadav</a>
             </address>
             </form>
         </div>
     </div>
 </div>
-
+<jsp:include page="/WEB-INF/views/footer.jsp"></jsp:include>
 </body>
 </html>

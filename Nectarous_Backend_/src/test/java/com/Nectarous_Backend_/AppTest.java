@@ -1,4 +1,4 @@
-package Ecommerce.Nectarous_Backend_;
+package com.Nectarous_Backend_;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

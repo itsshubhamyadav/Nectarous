@@ -16,8 +16,7 @@
 	src="<c:url value="/resources/js/login.js"></c:url>"></script>
 <link rel="stylesheet"
 	href="<c:url value="/resources/css/login.css"></c:url>">
-<img alt=""
-	src="${pageContext.request.contextPath}/resources/img/Candy-HD-Picture.jpg " style="margin-top: -100px; height:auto; width:auto;">
+
 
 </head>
 <body>

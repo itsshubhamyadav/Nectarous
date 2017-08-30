@@ -120,7 +120,7 @@ public class homeController {
 //	}
 	
 	@RequestMapping(value="/saveregister", method=RequestMethod.POST)
-	public ModelAndView saveRegister( @ModelAttribute("user") User user, BindingResult result)
+	public ModelAndView saveRegister(@Valid @ModelAttribute("user") User user, BindingResult result)
 	{
 		ModelAndView mav=new ModelAndView();
 		if(result.hasErrors())

@@ -1,21 +1,4 @@
-section
-{
-  background:yellow;
-}
-.banner
-{
-  background:red;
-  min-height:200px;
-}
-.banner .row
-{
-  text-align:center;
-  margin-top:50px;
-}
-.banner h1
-{
-  color:white;
-}
+
 li{
 	 font-size: 115%;
 	 font-family:helvetica;
@@ -54,6 +37,7 @@ li{
 ul.dropdown-menu {
     background-color: black;
 }
+
 
 
 @media (max-width: 992px) {

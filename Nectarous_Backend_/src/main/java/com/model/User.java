@@ -17,7 +17,6 @@ public class User implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
 	
-
 	private String name;
 	
 	private String address;
@@ -25,10 +24,11 @@ public class User implements Serializable {
 	@Id
 	private String email;
 	
-	
 	private String phone;
 	
+
 	private String password;
+	
 	private String gender;
 	private String role;
 	private boolean enabled;

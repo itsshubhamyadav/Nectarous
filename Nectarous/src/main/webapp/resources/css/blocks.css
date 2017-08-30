@@ -1,16 +1,20 @@
-.form {
+.form  {
     margin:auto;
     margin-top:80px;
     max-width:300px;
     padding:40px;
     background:#eee;
-    
+    box-shadow: 0 10px 30px #cc6600;
 
     border-radius: 25px;
     border: 2px solid #993300;
     width: 300px;
     height:370px;    
     
+}
+
+.form:hover{
+	margin-top: 60px;
 }
 .header {
     text-align:center;
@@ -43,12 +47,18 @@
     padding:40px;
     background:#eee;
     
+    box-shadow: 0 10px 30px #cc6600;    
 
     border-radius: 25px;
     border: 2px solid #993300;
     width: 100%;
     height:350px;    
     
+}
+
+.form1:hover{
+	margin-top: 60px;
+	
 }
 
 .Row1
