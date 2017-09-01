@@ -72,10 +72,24 @@
 
 <div class="fileinput fileinput-new" dataprovides="fileInput">
 <div class="form-group">
-<Label class="control-label col-xs-2">Image</Label>
+<Label class="control-label col-xs-2">Image1</Label>
 <div class="col-xs-10">
-<input class="form-control" type="file" name="file" accept="images/*">
-</div></div></div>
+<input class="form-control" type="file" name="file1" accept="images/*">
+</div></div>
+<div class="form-group">
+<Label class="control-label col-xs-2">Image2</Label>
+<div class="col-xs-10">
+<input class="form-control" type="file" name="file2" accept="images/*">
+</div></div>
+<div class="form-group">
+<Label class="control-label col-xs-2">Image3</Label>
+<div class="col-xs-10">
+<input class="form-control" type="file" name="file3" accept="images/*">
+</div></div>
+
+
+
+</div>
 <hr>
 <center>
 <button class="btn btn-lg btn-primary" type="submit" >Update</button>

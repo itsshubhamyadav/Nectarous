@@ -39,7 +39,7 @@
 	<td><c:out value="${c.category.name}"></c:out></td>
 	<td><c:out value="${c.price}"></c:out></td>
 	<td class="span2"><c:out value="${c.description}"></c:out></td>
-	<td><img src="${pageContext.request.contextPath}/resources/${c.imgname} " width="50px" height="50px"></td>
+	<td><img src="${pageContext.request.contextPath}/resources/${c.imgname1} " width="50px" height="50px"></td>
 	<td class="span4">
     <c:set var="contextRoot" value="${pageContext.request.contextPath}"/>
     <a class="btn btn-info" role="button" href="<c:url value="/admin/deleteProduct/${c.pid}"/>">Delete</a>

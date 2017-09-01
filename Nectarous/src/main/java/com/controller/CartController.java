@@ -60,8 +60,10 @@ public class CartController {
 			 Double cartPrice=Double.parseDouble(req.getParameter("pPrice"));
 			 int cartQuantity=Integer.parseInt(req.getParameter("quant"));
 		     String servicename=req.getParameter("name");
-		     String imgname=req.getParameter("imgname");
+		     String imgname=req.getParameter("imgname1");
+		     String suppname=req.getParameter("suppname");
 		     Cart cartExists=cartDaoImpl.getCartById(pid, userEmail);
+		     User user=userDaoImpl.findById(userEmail);
 		     if(cartExists==null){
 		    	 Cart cr=new Cart();
 		    	 cr.setCartPrice(cartPrice);
@@ -69,6 +71,7 @@ public class CartController {
 		    	 cr.setCartProductName(servicename);
 		    	 cr.setCartImage(imgname);
 		    	 cr.setCartQuantity(cartQuantity);
+		    	 cr.setCartProductSupplier(suppname);
 		    	 User u=userDaoImpl.findById(userEmail);
 		    	 cr.setCartUserDetails(u);
 		    	 cartDaoImpl.insert(cr);
@@ -81,6 +84,7 @@ public class CartController {
 		    	 cr.setCartProductName(servicename);
 		    	 cr.setCartImage(imgname);
 		    	 cr.setCartQuantity(cartQuantity);
+		    	 cr.setCartProductSupplier(suppname);
 		    	 User u=userDaoImpl.findById(userEmail);
 		    	 cr.setCartUserDetails(u);
 		    	 cartDaoImpl.update(cr);

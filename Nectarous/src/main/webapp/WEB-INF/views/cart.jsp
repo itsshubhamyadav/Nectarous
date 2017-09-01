@@ -44,7 +44,7 @@
                             <a class="thumbnail pull-left" href="#"> <img class="media-object" src="${pageContext.request.contextPath}/resources/${c.cartImage}" style="width: 72px; height: 72px;"> </a>
                             <div class="media-body">
                                 <h4 class="media-heading"><a href="#"><c:out value="${c.cartProductName}"></c:out></a></h4>
-                                <h5 class="media-heading"> by <a href="#">Shubham Sweets</a></h5>
+                                <h5 class="media-heading"> by <a href="#"><c:out value="${c.cartProductSupplier}"></c:out></a></h5>
                                 <span>Status: </span><span class="text-success"><strong>In Stock</strong></span>
                             </div>
                         </div></td>

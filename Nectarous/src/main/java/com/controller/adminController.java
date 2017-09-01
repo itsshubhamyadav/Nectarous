@@ -71,7 +71,7 @@ public class adminController {
 	
 	
 	@RequestMapping(value="/saveProduct", method= RequestMethod.POST)
-	public String saveProduct(HttpServletRequest request,@RequestParam("file") MultipartFile file)
+	public String saveProduct(HttpServletRequest request,@RequestParam("file1") MultipartFile file1,@RequestParam("file2") MultipartFile file2,@RequestParam("file3") MultipartFile file3)
 	{
 		System.out.println("ENTERING DATA");
 		Product p=new Product();
@@ -83,16 +83,30 @@ public class adminController {
 		p.setSupplier(supplierDaoImpl.findById(Integer.parseInt(request.getParameter("pSupplier"))));
 		
 		String filepath=request.getSession().getServletContext().getRealPath("/");
-		String filename=file.getOriginalFilename();
-		p.setImgname(filename);
+		String filename1=file1.getOriginalFilename();
+		String filename2=file2.getOriginalFilename();
+		String filename3=file3.getOriginalFilename();
+		p.setImgname1(filename1);
+		p.setImgname2(filename2);
+		p.setImgname3(filename3);
 		productDaoImpl.insertProduct(p);
-		System.out.println("File path File"+filepath+" "+filename);
+		System.out.println("File path File"+filepath+" "+filename1);
+		System.out.println("File path File"+filepath+" "+filename1);
+		System.out.println("File path File"+filepath+" "+filename1);
 		
 		try {
-			byte imagebyte[]=file.getBytes();
-			BufferedOutputStream fos=new BufferedOutputStream(new FileOutputStream(filepath+"/resources/"+filename));
-			fos.write(imagebyte);
-			fos.close();
+			byte imagebyte1[]=file1.getBytes();
+			byte imagebyte2[]=file2.getBytes();
+			byte imagebyte3[]=file3.getBytes();
+			BufferedOutputStream fos1=new BufferedOutputStream(new FileOutputStream(filepath+"/resources/"+filename1));
+			BufferedOutputStream fos2=new BufferedOutputStream(new FileOutputStream(filepath+"/resources/"+filename2));
+			BufferedOutputStream fos3=new BufferedOutputStream(new FileOutputStream(filepath+"/resources/"+filename3));
+			fos1.write(imagebyte1);
+			fos2.write(imagebyte2);
+			fos3.write(imagebyte3);
+			fos1.close();
+			fos2.close();
+			fos3.close();
 		}
 		catch(IOException e)
 		{ 
@@ -144,7 +158,7 @@ public class adminController {
 	}
 	
 	@RequestMapping(value="/productUpdate", method= RequestMethod.POST)
-	public ModelAndView editProduct(HttpServletRequest request,@RequestParam("file") MultipartFile file)
+	public ModelAndView editProduct(HttpServletRequest request,@RequestParam("file1") MultipartFile file1,@RequestParam("file2") MultipartFile file2,@RequestParam("file3") MultipartFile file3)
 	{
 		ModelAndView mv=new ModelAndView();
 		
@@ -166,16 +180,30 @@ public class adminController {
 		p2.setSupplier(supplierDaoImpl.findById(Integer.parseInt(request.getParameter("pSupplier"))));
 		
 		String filepath=request.getSession().getServletContext().getRealPath("/");
-		String filename=file.getOriginalFilename();
-		p2.setImgname(filename);
+		String filename1=file1.getOriginalFilename();
+		String filename2=file2.getOriginalFilename();
+		String filename3=file3.getOriginalFilename();
+		p2.setImgname1(filename1);
+		p2.setImgname2(filename2);
+		p2.setImgname3(filename3);
 		productDaoImpl.updateProduct(p2);
-		System.out.println("File path File"+filepath+" "+filename);
+		System.out.println("File path File"+filepath+" "+filename1);
+		System.out.println("File path File"+filepath+" "+filename2);
+		System.out.println("File path File"+filepath+" "+filename3);
 		
 		try {
-			byte imagebyte[]=file.getBytes();
-			BufferedOutputStream fos=new BufferedOutputStream(new FileOutputStream(filepath+"/resources/"+filename));
-			fos.write(imagebyte);
-			fos.close();
+			byte imagebyte1[]=file1.getBytes();
+			byte imagebyte2[]=file2.getBytes();
+			byte imagebyte3[]=file3.getBytes();
+			BufferedOutputStream fos1=new BufferedOutputStream(new FileOutputStream(filepath+"/resources/"+filename1));
+			BufferedOutputStream fos2=new BufferedOutputStream(new FileOutputStream(filepath+"/resources/"+filename2));
+			BufferedOutputStream fos3=new BufferedOutputStream(new FileOutputStream(filepath+"/resources/"+filename3));
+			fos1.write(imagebyte1);
+			fos2.write(imagebyte2);
+			fos3.write(imagebyte3);
+			fos1.close();
+			fos2.close();
+			fos3.close();
 		}
 		catch(IOException e)
 		{

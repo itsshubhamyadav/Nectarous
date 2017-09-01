@@ -142,6 +142,7 @@
 						<div class="col-xs-8 col-sm-8 col-md-8 text-left">
 							<div class="receipt-right">
 								<p>
+								<br><br><br><br>
 									<b>Date :</b> 30 Aug 2017
 								</p>
 
@@ -149,12 +150,14 @@
 						</div>
 						<div class="col-xs-4 col-sm-4 col-md-4">
 							<div class="receipt-left">
-								<h1>Signature</h1>
+								<p><img src="<c:url value="/resources/img/me.png"></c:url>" alt="none" height="100px" width="200px" style="margin-left:-5px; margin-top:-40px;"/></p>
+								<h1 style="margin-top:-40px;">Signature</h1>
 							</div>
 						</div>
 						<br>
-						<br>
+						<br><br><br>
 						<center>
+						<br><br>
 						<h3 style="color: rgb(140, 140, 140);">Your Product will be Delivered with 6 hrs of working day.</h3>
 							<h2 style="color: rgb(140, 140, 140);">
 							Thank you for your Shopping!</h2>

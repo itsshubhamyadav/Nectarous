@@ -40,7 +40,10 @@ public class Product implements Serializable {
 	@JoinColumn(name="sid")
 	private Supplier supplier;
 	
-	private String imgname;
+	private String imgname1;
+	
+	private String imgname2;
+	private String imgname3;
 	
 	@Transient
 	MultipartFile pimage;
@@ -88,11 +91,23 @@ public class Product implements Serializable {
 	public void setSupplier(Supplier supplier) {
 		this.supplier = supplier;
 	}
-	public String getImgname() {
-		return imgname;
+	public String getImgname1() {
+		return imgname1;
 	}
-	public void setImgname(String imgname) {
-		this.imgname = imgname;
+	public void setImgname1(String imgname1) {
+		this.imgname1 = imgname1;
+	}
+	public String getImgname2() {
+		return imgname2;
+	}
+	public void setImgname2(String imgname2) {
+		this.imgname2 = imgname2;
+	}
+	public String getImgname3() {
+		return imgname3;
+	}
+	public void setImgname3(String imgname3) {
+		this.imgname3 = imgname3;
 	}
 
 		

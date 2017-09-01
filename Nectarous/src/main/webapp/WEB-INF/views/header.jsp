@@ -40,11 +40,11 @@
 							class="dropdown-toggle">Admin<b class="caret"></b></a>
 							<ul class="dropdown-menu">
 								<li class="inli"><a
-									href="${pageContext.request.contextPath }/admin/adding">Admin
-										</a></li>
-								<li><a
-									href="${pageContext.request.contextPath }/admin/productList">Admin
-										List</a></li>
+									href="${pageContext.request.contextPath }/admin/adding"><font color="white">Admin
+										</font></a></li>
+								<li ><a
+									href="${pageContext.request.contextPath }/admin/productList"><font color="white">Admin
+										List</font></a></li>
 							</ul></li>
           <li class="dropdown"><a href="#" class="dropdown-toggle"
 							data-toggle="dropdown" role="button" aria-haspopup="true"
@@ -52,7 +52,7 @@
 							<ul class="dropdown-menu">
 								<c:forEach var="catVal" items="${catList }">
 									<li><a
-										href="${pageContext.request.contextPath}/productCustList?cid=<c:out value="${catVal.cid}"></c:out>">${catVal.name}</a></li>
+										href="${pageContext.request.contextPath}/productCustList?cid=<c:out value="${catVal.cid}"></c:out>"><font color="white">${catVal.name}</font></a></li>
 								</c:forEach>
 							</ul></li>
 							</ul>

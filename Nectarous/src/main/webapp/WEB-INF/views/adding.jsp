@@ -91,8 +91,16 @@
 						</div>
 						
 						<tr>
-						<h4 class="input_title">Image</h4>
-						<td><input class="form-control" type="file" name="file" required/></td>
+						<h4 class="input_title">Image 1</h4>
+						<td><input class="form-control" type="file" name="file1" required/></td>
+						</tr>
+						<tr>
+						<h4 class="input_title">Image 2</h4>
+						<td><input class="form-control" type="file" name="file2" required/></td>
+						</tr>
+						<tr>
+						<h4 class="input_title">Image 3</h4>
+						<td><input class="form-control" type="file" name="file3" required/></td>
 						</tr>
 						<br>
 						<button type="submit" class="btn btn-lg btn-info">Save</button>

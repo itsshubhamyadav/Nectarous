@@ -27,36 +27,36 @@
 						
 						<div class="preview-pic tab-content">
 						  <div class="tab-pane active" id="pic-1"><img
-					src="${pageContext.request.contextPath}/resources/${product.imgname}"
-					 /></div>
+					src="${pageContext.request.contextPath}/resources/${product.imgname1}"
+					 height=450px width=100% /></div>
 						  <div class="tab-pane" id="pic-2"><img
-					src="${pageContext.request.contextPath}/resources/${product.imgname}"
-					 /></div>
+					src="${pageContext.request.contextPath}/resources/${product.imgname2}"
+					 height=450px width=100% /></div>
 						  <div class="tab-pane" id="pic-3"><img
-					src="${pageContext.request.contextPath}/resources/${product.imgname}"
-					 /></div>
+					src="${pageContext.request.contextPath}/resources/${product.imgname3}"
+					 height=450px width=100% /></div>
 						  <div class="tab-pane" id="pic-4"><img
-					src="${pageContext.request.contextPath}/resources/${product.imgname}"
-					 /></div>
+					src="${pageContext.request.contextPath}/resources/${product.imgname1}"
+					 height=450px width=100% /></div>
 						  <div class="tab-pane" id="pic-5"><img
-					src="${pageContext.request.contextPath}/resources/${product.imgname}"
-					 /></div>
+					src="${pageContext.request.contextPath}/resources/${product.imgname2}"
+					 height=450px width=100% /></div>
 						</div>
 						<ul class="preview-thumbnail nav nav-tabs">
 						  <li class="active"><a data-target="#pic-1" data-toggle="tab"><img
-					src="${pageContext.request.contextPath}/resources/${product.imgname}"
+					src="${pageContext.request.contextPath}/resources/${product.imgname1}"
 					 /></a></li>
 						  <li><a data-target="#pic-2" data-toggle="tab"><img
-					src="${pageContext.request.contextPath}/resources/${product.imgname}"
+					src="${pageContext.request.contextPath}/resources/${product.imgname2}"
 					 /></a></li>
 						  <li><a data-target="#pic-3" data-toggle="tab"><img
-					src="${pageContext.request.contextPath}/resources/${product.imgname}"
+					src="${pageContext.request.contextPath}/resources/${product.imgname3}"
 					 /></a></li>
 						  <li><a data-target="#pic-4" data-toggle="tab"><img
-					src="${pageContext.request.contextPath}/resources/${product.imgname}"
+					src="${pageContext.request.contextPath}/resources/${product.imgname1}"
 					 /></a></li>
 						  <li><a data-target="#pic-5" data-toggle="tab"><img
-					src="${pageContext.request.contextPath}/resources/${product.imgname}"
+					src="${pageContext.request.contextPath}/resources/${product.imgname2}"
 					 /></a></li>
 						</ul>
 						
@@ -84,7 +84,10 @@
 					<input type="hidden" value="${product.pid}" name="pid" />
 					 <input type="hidden" value="${product.price}" name="pPrice" /> 
 					 <input	type="hidden" value="${product.name}" name="name" />
-					  <input type="hidden" value="${product.imgname}" name="imgname" />
+					  <input type="hidden" value="${product.imgname1}" name="imgname1" />
+					  <input type="hidden" value="${product.imgname2}" name="imgname2" />
+					  <input type="hidden" value="${product.imgname3}" name="imgname3" />
+					  <input type="hidden" value="${product.supplier.supplierName}" name="suppname" />
 						<h5 class="sizes">Quantity :</h5><div class="col-xs-2" style="margin-left:100px; margin-top:-40px"> <input type="text" class="form-control" name="quant" required /></div><br>
 						
 						<div class="action">

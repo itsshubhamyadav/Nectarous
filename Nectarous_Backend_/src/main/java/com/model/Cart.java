@@ -35,16 +35,19 @@ public class Cart implements Serializable{
 	private int cartQuantity;
 	private String cartImage;
 	private String cartProductName;
+	private String cartProductSupplier;
 	
 	
 	
+
 	public Cart(int cartId, int cartProductId, User cartUserDetails, Double cartPrice, int cartQuantity)
 	{
 		this.cartId=cartId;
 		this.cartProductId=cartProductId;
 		this.cartUserDetails=cartUserDetails;
 		this.cartPrice=cartPrice;
-		this.cartQuantity=cartQuantity;	
+		this.cartQuantity=cartQuantity;
+		
 	}
 	
 
@@ -109,6 +112,14 @@ public class Cart implements Serializable{
 		this.cartProductName = cartProductName;
 	}
 	
+	public String getCartProductSupplier() {
+		return cartProductSupplier;
+	}
+	
+	public void setCartProductSupplier(String cartProductSupplier) {
+		this.cartProductSupplier = cartProductSupplier;
+	}
+
 		
 
 }
