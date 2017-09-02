@@ -3,6 +3,8 @@ package com.model;
 
 import com.model.User;
 import java.io.Serializable;
+import java.time.LocalDateTime;
+import java.util.Date;
 
 import javax.persistence.*;
 import javax.validation.constraints.Email;
@@ -24,7 +26,14 @@ public class Orders {
 	
 	private String payment;
 	private Double total;
+	private Date date;
 	
+	public Date getDate() {
+		return date;
+	}
+	public void setDate(Date date) {
+		this.date = date;
+	}
 	public int getOrderId() {
 		return orderId;
 	}

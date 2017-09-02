@@ -72,7 +72,7 @@
 								<form id="register-form" action="${pageContext.request.contextPath}/saveregister" method="post"
 									role="form" style="display: none;">
 									<div class="form-group">
-									<form:errors path="name" cssClass="err" />
+									<form:errors path="user.*"  />
 										<label for="username">Username</label> <input type="text"
 											name="name" id="name" tabindex="1"
 											class="form-control" placeholder="Username" value="">
@@ -106,7 +106,7 @@
 										</select>
 									</div>
 									<div class="form-group">
-									<form:errors path="phone" cssClass="err" />
+									<form:errors path="user.phone" cssClass="err" />
 										<label for="phone">Phone</label> <input type="text"
 											name="phone" id="phone" tabindex="2" class="form-control"
 											placeholder="Phone Number">

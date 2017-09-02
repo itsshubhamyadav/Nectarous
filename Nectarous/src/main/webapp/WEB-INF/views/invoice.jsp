@@ -143,7 +143,7 @@
 							<div class="receipt-right">
 								<p>
 								<br><br><br><br>
-									<b>Date :</b> 30 Aug 2017
+									<b>Date :</b> ${order.date}
 								</p>
 
 							</div>
@@ -166,6 +166,7 @@
 								<br> <a class="btn btn-success btn-lg btn-block"
 									role="button" href="<c:url value="/index"/>">Click to Go to
 									Home Page</a>
+									
 					</div>
 				</div>
 

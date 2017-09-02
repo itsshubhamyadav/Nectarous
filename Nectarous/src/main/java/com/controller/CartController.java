@@ -5,6 +5,8 @@ import java.io.BufferedOutputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.security.Principal;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -124,11 +126,16 @@ public class CartController {
 		String userEmail=principal.getName();
 		Double total=Double.parseDouble(req.getParameter("total"));
 		String payment= req.getParameter("payment");
+		Date today = new Date();
 		User user=userDaoImpl.findById(userEmail);
 		ord.setUser(user);
 		ord.setTotal(total);
 		ord.setPayment(payment);
+		ord.setDate(today);
+		System.out.println(today);
+		
 		ordersDaoImpl.insertOrders(ord);
+		mv.addObject("order",ord);
 		mv.addObject("user",user);
 		mv.addObject("cart",cartDaoImpl.findCartById(userEmail));
 		return mv;

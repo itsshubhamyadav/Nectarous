@@ -5,6 +5,7 @@ import javax.persistence.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Past;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
@@ -16,17 +17,23 @@ import javax.validation.constraints.Size;
 public class User implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
-	
+	@Size(min=2, max=30, message="Please enter value between {min} to {max}")
 	private String name;
 	
+	@NotNull(message="Please enter Address")
 	private String address;
+	
 	
 	@Id
 	private String email;
 	
+	@NotNull
+	@Pattern(regexp="[\\d] {10}",message="Please enter digits")
+	@Size(min=8, max=10,message="Please correct phone no.")
 	private String phone;
 	
-
+	
+	@NotNull(message="Enter the password")
 	private String password;
 	
 	private String gender;
