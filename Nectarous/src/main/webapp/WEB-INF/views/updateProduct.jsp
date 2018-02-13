@@ -12,7 +12,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <title>Update List</title>
 </head>
-<body>
+<body style="background-color:bisque;">
 <jsp:include page="/WEB-INF/views/header.jsp"></jsp:include><br>
 <div class="container" style="margin-top:120px; margin-bottom:100px;">
 <c:url value="/productUpdate" var="pru"></c:url>

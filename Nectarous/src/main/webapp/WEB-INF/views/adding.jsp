@@ -13,7 +13,7 @@
   <link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/Adding.css"></c:url>">
 <title>Adding </title>
 </head>
-<body>
+<body style="background-color:bisque;">
 <jsp:include page="/WEB-INF/views/header.jsp"></jsp:include>
 <div class="container" style="margin-top:100px; margin-bottom:100px;">
 	<div class="row"><br><br>

@@ -11,7 +11,7 @@ import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-@SuppressWarnings("deprecation")
+
 @Repository("userDao")
 public class UserDaoImpl implements UserDao {
 	@Autowired

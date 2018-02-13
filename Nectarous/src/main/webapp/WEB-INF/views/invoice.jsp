@@ -88,12 +88,13 @@
 								<c:forEach var="c" varStatus="st" items="${cart}">
 									<tr>
 											<td class="col-md-9"> <c:out value="${c.cartProductName}"></c:out></td>
+											
 											<td class="col-md-3">&#x20b9; <c:out value="${c.cartQuantity*c.cartPrice}"></c:out></td>
-									<c:set var="gtot" value="${gtot + c.cartPrice * c.cartQuantity }"></c:set></td>
+									<c:set var="gtot"><fmt:formatNumber type="number" minFractionDigits="2" maxFractionDigits="2" value="${gtot + c.cartPrice * c.cartQuantity }" /></c:set>
 									</tr>
 								</c:forEach>
-							<c:set var="cgst" value="${gtot * 0.08 }"></c:set>
-							<c:set var="sgst" value="${gtot * 0.18 }"></c:set>
+							<c:set var="cgst"><fmt:formatNumber type="number" minFractionDigits="2" maxFractionDigits="2" value="${gtot * 0.08 }" /></c:set>
+							<c:set var="sgst"><fmt:formatNumber type="number" minFractionDigits="2" maxFractionDigits="2" value="${gtot * 0.18 }" /></c:set>
 							<tr>
 								<td class="text-right">
 									<p>
@@ -158,7 +159,7 @@
 						<br><br><br>
 						<center>
 						<br><br>
-						<h3 style="color: rgb(140, 140, 140);">Your Product will be Delivered with 6 hrs of working day.</h3>
+						<h3 style="color: rgb(140, 140, 140);">Your Product will be Delivered within 6 hrs of working day.</h3>
 							<h2 style="color: rgb(140, 140, 140);">
 							Thank you for your Shopping!</h2>
 							<center>
@@ -174,7 +175,5 @@
 		</div>
 	</div>
 	<jsp:include page="/WEB-INF/views/footer.jsp"></jsp:include><br>
-
-
 </body>
 </html>

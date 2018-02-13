@@ -15,7 +15,7 @@
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </head>
-<body>
+<body style="background-color:bisque;">
 	<jsp:include page="/WEB-INF/views/header.jsp"></jsp:include>
 	<div class='container' style="margin-top: 80px; margin-bottom: 100px;">
 		<div class='row' style='padding-top: 25px; padding-bottom: 25px;'>
@@ -52,10 +52,7 @@
 															</c:forEach>
 
 															<tr>
-																<td colspan="2"><a
-																	class="btn btn-warning btn-sm pull-right"
-																	href="http://www.startajobboard.com/"
-																	title="Remove Item">X</a> <b> Final Products</b></td>
+																<td colspan="2"> <b> Final Products</b></td>
 															</tr>
 															<tr>
 																<td>

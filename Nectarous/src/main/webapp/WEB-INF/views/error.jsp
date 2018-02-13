@@ -7,9 +7,9 @@
 <head>
 <link rel="shortcut icon" href="<c:url value="/resources/img/1.png"></c:url>" />
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Error</title>
 </head>
-<body>
+<body style="background-color:bisque;">
 	<center>
 		<h2>
 			ERROR OCCURED <a href="${pageContext.request.contextPath }/index">Go to Home</a>

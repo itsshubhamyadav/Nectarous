@@ -13,7 +13,7 @@
   <link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/prodDetail.css"></c:url>">
 <title>Product Detail</title>
 </head>
-<body>
+<body style="background-color:bisque;">
 
 	<jsp:include page="/WEB-INF/views/header.jsp"></jsp:include><br>
 	<br>
